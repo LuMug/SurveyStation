@@ -9,9 +9,11 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 9:00   |Consegna del mandato e gruppi |
-|9:00 - 11:30 |Analisi e suddivisione del lavoro  |
-|12:20 - 15:45   |Ricerca sul sismografo e varie possibilità di realizzazione e componenti |
+|8.20 - 9.40: |Ricerca sul componente "Grove - Vibrator 047 906". Io e Nicola abbiamo preparato la posdtazione per l'Arduino e abbiamo organizzato il materiale.|
+|9.40 - 10.10: |Primi test sul componente. Abbiamo preparato codice e collegamenti. |
+|10.10 - 10.40: |Abbiamo scoperto che il componente che ci ha dato Mussi è un vibratore e non un sensore di vibrazioni.|
+|10.40 - 12.20: |Abbiamo provato ad usare un altro componente: TiltSensor. Serve a catturare una vibrazione in modo molto grezzo. Dice solo se c'è stata o no. Non cattura la potenza. |
+
 
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
