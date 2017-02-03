@@ -32,8 +32,9 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:15 - 13.45  |Presentazione progetti precedenti|
-|13.45 - 15.10 |Ricerca riguardo al sismografo   |
+|8:15 - 12.20  |Ricerca riguardo ai sensori possibili da utilizzare per il progetto.
+|13.15 - 15.20 |Ricerca riguardo a come trasmettere i dati dall'arduino al webserver.
+|15.30 - 15.45 | Diario        
 
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
