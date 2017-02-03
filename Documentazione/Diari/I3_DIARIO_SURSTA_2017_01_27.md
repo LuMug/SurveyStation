@@ -26,13 +26,13 @@
 |13:15 - 15:30 |comprensione mandato e domande al mandante        |
 |15:30 - 15:45 |Stesura diario                                    |
 
-##### Jonathan Fassora
+##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |8:15 - 13.45  |Presentazione progetti precedenti|
 |13.45 - 15.10 |Ricerca riguardo al sismografo   |
 
-##### Jonathan Fassora
+##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |8:15 - 13:15   |comprensione mandato   |
