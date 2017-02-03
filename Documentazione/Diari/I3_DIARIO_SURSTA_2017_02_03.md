@@ -44,7 +44,7 @@
 
 ##  Problemi riscontrati e soluzioni adottate
 Jacopo -- > Al momento non sono riuscito a trovare un modo per poter far comunicare l'arduino con un server poiché in rete non ho trovato ancora il tutorial che fa al caso mio.
-Nicola e Jeremy --> Mancano i componenti per poter cominciare a implementare il sismografo
+<br>Nicola e Jeremy --> Mancano i componenti per poter cominciare a implementare il sismografo
 
 ##  Punto della situazione rispetto alla pianificazione
 
