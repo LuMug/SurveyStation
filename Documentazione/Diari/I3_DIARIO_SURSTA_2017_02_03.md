@@ -22,9 +22,12 @@
 ##### Jacopo Greppi
 |Orario        |Lavoro svolto                                     |
 |--------------|--------------------------------------------------|
-|8:15 - 12:20  |Revisione presentazione progetto 2 e presentazione|
-|13:15 - 15:30 |comprensione mandato e domande al mandante        |
-|15:30 - 15:45 |Stesura diario                                    |
+|8:15 - 9:05   |Progettazione della tabella degli utenti e creazione in phpmyadmin   				  |
+|9:05 - 11:30  |Ho assistito Riccardo mentre iniziava a sistemare il template del sito che utilizziamo|
+|11:30 - 11:45 |Ho cercato se al quarto piano fosse disponibile un giroscopio				   		  |
+|11:45 - 12:20 |Ho cercato di capire come fare per inviare dei dati dall'arduino ad un server		  |
+|13:15 - 15:30 |Ho cercato di capire come fare per inviare dei dati dall'arduino ad un server		  |
+|15:30 - 15:45 |Stesura diario                                    				  					  |
 
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
@@ -39,12 +42,13 @@
 
 
 ##  Problemi riscontrati e soluzioni adottate
-
+Jacopo -- > Al momento non sono riuscito a trovare un modo per poter far comunicare l'arduino con un server poiché in rete non ho trovato ancora il tutorial che fa al caso mio.
 
 ##  Punto della situazione rispetto alla pianificazione
 
 
 ## Programma di massima per la prossima giornata di lavoro
+Jacopo -- > Riuscire a capire come inviare i dati.
 
 
 
