@@ -13,7 +13,9 @@
 |9.40 - 10.10:|Primi test sul componente. Abbiamo preparato codice e collegamenti. |
 |10.10 - 10.40:|Abbiamo scoperto che il componente che ci ha dato Mussi è un vibratore e non un sensore di vibrazioni.|
 |10.40 - 12.20:|Abbiamo provato ad usare un altro componente: TiltSensor. Serve a catturare una vibrazione in modo molto grezzo. Dice solo se c'è stata o no. Non cattura la potenza. |
-
+|13.15 - 14.20:|Ricerche sulla sismografia. |
+|14.20 - 15.20:|Ricerca sul trasferimento dati da Arduino a database. Ci sono due soluzioni valide: Via file.txt o Via Ethernet. |
+|15.20 - 15.45| Diario.|
 
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
