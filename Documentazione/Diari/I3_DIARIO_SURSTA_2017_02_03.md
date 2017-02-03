@@ -9,19 +9,17 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8.20 - 9.40:|Ricerca sul componente "Grove - Vibrator 047 906". Io e Nicola abbiamo preparato la posdtazione per l'Arduino e abbiamo organizzato il materiale.|
-|9.40 - 10.10:|Primi test sul componente. Abbiamo preparato codice e collegamenti. |
-|10.10 - 10.40:|Abbiamo scoperto che il componente che ci ha dato Mussi è un vibratore e non un sensore di vibrazioni.|
-|10.40 - 12.20:|Abbiamo provato ad usare un altro componente: TiltSensor. Serve a catturare una vibrazione in modo molto grezzo. Dice solo se c'è stata o no. Non cattura la potenza. |
-|13.15 - 14.20:|Ricerche sulla sismografia. |
-|14.20 - 15.20:|Ricerca sul trasferimento dati da Arduino a database. Ci sono due soluzioni valide: Via file.txt o Via Ethernet. |
-|15.20 - 15.45| Diario.|
+|8:20 - 9:00   |Consegna del mandato e gruppi |
+|9:00 - 11:30 |Analisi e suddivisione del lavoro  |
+|12:20 - 15:45   |Ricerca sul sismografo e varie possibilità di realizzazione e componenti |
 
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 12:20   |Assegnazione progetto, divisione compiti iniziali, piccola analisi del mandato (capire cosa fare, a grandi linee come fare)          |
-|13:15 - 15:45 |Domande al committente + analisi delle informazioni acquisite     |
+|8:20 - 12:20   |Ricerca fonti di dati professionali + vedere come utilizzarli (p.es scaricamento di csv da oasi)    |
+|13:15 - 14:15 | Presentazione progetto 2 |
+|14:15 - 15:30 | Organizzazione cose da fare, prima struttura sito, come strutturare le tabelle e quali dati salvare (probabillmente utilizzeremo il sistema delle soglie, mantenendo dunque solo i dati rilevanti. ||
+|15:30 - 15:45 |Doc: obiettivo e informazioni progetto. |
 
 ##### Jacopo Greppi
 |Orario        |Lavoro svolto                                     |
