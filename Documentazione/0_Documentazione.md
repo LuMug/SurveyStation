@@ -53,13 +53,15 @@
 
   In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
 
-  -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
+  -   Allievi: Jeremy Jornod, Nicola Mazzoletti, Jonathan Fassora, Riccardo di Summa, Jacopo Greppi
+  
+  -   Docente responsabile: Luca Muggiasca
 
-  -   scuola ,sezione, materia/e,
+  -   Scuola Arti e Mestieri Trevano (SAMT)
 
-  -   date di inizio e termine di consegna,
-
-  -   …
+  -   Inizio: 27.01.2017
+  
+  -   Consegna: 12.05.2017
 
 ### Abstract
 
