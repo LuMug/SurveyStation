@@ -7,7 +7,7 @@ Iniziato il: 27.01.2017
 
 Data di consegna: 12.05.2017
 
-- [Quaderno dei compiti](Documentazione/0_qdc_p3_SurveyStation.md)
+- [Quaderno dei compiti](Documentazione/0_qdc_p3_stazioneMeteo.pdf)
 
 - [Trello Project Management](https://trello.com/b/KIG5Z9nC/surveystation)
 
