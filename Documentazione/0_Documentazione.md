@@ -110,152 +110,129 @@
 
 ### Analisi del dominio
 
-  Questo capitolo dovrebbe descrivere il contesto in cui il prodotto verrà
-  utilizzato, da questa analisi dovrebbero scaturire le risposte a quesiti
-  quali ad esempio:
-
-  -   Background/Situazione iniziale
-
-  -   Quale è e come è organizzato il contesto in cui il prodotto dovrà
-      funzionare?
-
-  -   Come viene risolto attualmente il problema? Esiste già un prodotto
-      simile?
-
-  -   Chi sono gli utenti? Che bisogni hanno? Come e dove lavorano?
-
-  -   Che competenze/conoscenze/cultura posseggono gli utenti in relazione
-      con il problema?
-
-  -   Esistono convenzioni/standard applicati nel dominio?
-
-  -   Che conoscenze teoriche bisogna avere/acquisire per poter operare
-      efficacemente nel dominio?
-
-  -   …
 
 ### Analisi e specifica dei requisiti
 
 
-  |ID  |REQ-001                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Stazione di rilevamento |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Costruzione di una stazione di misura che invia i dati al server  |
-  |**002**      | Pagina web per la consultazione dei dati |
-  |**003**      | Raccolta dei dati interessanti |  
-  |**004**      | Sito hostato da http://www.samtinfo.ch                 |
+|ID      |REQ-001  |
+|--------|---------|
+|**Nome**     |Stazione di rilevamento |
+|**Priorità** |1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Costruzione di una stazione di misura che invia i dati al server  |
+|**002**      | Pagina web per la consultazione dei dati |
+|**003**      | Raccolta dei dati interessanti |  
+|**004**      | Sito hostato da http://www.samtinfo.ch                 |
   
 
-  |ID  |REQ-002                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Sismografo |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Costruzione di un sismografo in grado di rilevare le vibrazioni del terreno |
-  |**002**      | Lo stesso (tramite Arduino o simili) deve essere in grado di inviare i dati al server |
+|ID  |REQ-002                                         |
+|----|------------------------------------------------|
+|**Nome**    |Sismografo |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Costruzione di un sismografo in grado di rilevare le vibrazioni del terreno |
+|**002**      | Lo stesso (tramite Arduino o simili) deve essere in grado di inviare i dati al server |
   
 
-  |ID  |REQ-003                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Altri sensori |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Sulla base del sismografo dev'essere possibile aggiungere altri strumenti di misura alla stazione (p.es. barometro o termometro) |
-  |**002**      | Di nuovo sulla base del sismografo la stazione deve inviare i dati al server |
+|ID  |REQ-003                                         |
+|----|------------------------------------------------|
+|**Nome**    |Altri sensori |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Sulla base del sismografo dev'essere possibile aggiungere altri strumenti di misura alla stazione (p.es. barometro o termometro) |
+|**002**      | Di nuovo sulla base del sismografo la stazione deve inviare i dati al server |
   
 
-  |ID  |REQ-004                                         |
-  |----|------------------------------------------------|
-  |**Nome**    |Salvataggio dati|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Non è necessario salvare a lungo termine tutti i dati ricevuti dalla stazione|
-  |**002**      | Quando i valori entrano in una soglia interessante i dati vengono raccolti e archiviati|
+|ID  |REQ-004                                         |
+|----|------------------------------------------------|
+|**Nome**    |Salvataggio dati|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Non è necessario salvare a lungo termine tutti i dati ricevuti dalla stazione|
+|**002**      | Quando i valori entrano in una soglia interessante i dati vengono raccolti e archiviati|
   
 
-  |ID  |REQ-005                                         |
-  |----|------------------------------------------------|
-  |**Nome**    | Allarmi e notifiche|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**      | Gli allarmi e le notifiche scattano al superamento di una soglia definita |
-  |**002**      | Gli utenti registrati ricevono un e-mail di avviso |
-  |**003**      | Sulla pagina web viene mostrato l'allarme |
-  |**004**      | Le e-mail vengono inviate a intervalli regolari in caso di allarme (timespan configurabile), per evitare l'invio continuo all'utente |
-  |**005**      | Deve essere presente una notifica anche sulla stazione fisica (p.es un LED) |
+|ID  |REQ-005                                         |
+|----|------------------------------------------------|
+|**Nome**    | Allarmi e notifiche|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**      | Gli allarmi e le notifiche scattano al superamento di una soglia definita |
+|**002**      | Gli utenti registrati ricevono un e-mail di avviso |
+|**003**      | Sulla pagina web viene mostrato l'allarme |
+|**004**      | Le e-mail vengono inviate a intervalli regolari in caso di allarme (timespan configurabile), per evitare l'invio continuo all'utente |
+|**005**      | Deve essere presente una notifica anche sulla stazione fisica (p.es un LED) |
   
 
-  |ID  |REQ-006                                         |
-  |----|------------------------------------------------|
-  |**Nome**    | Admin e utenti|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**     | Presenza di un form di login e di registrazione |
-  |**002**     | L'admin ha accesso a una dashboard di gestione |
-  |**003**     | La registrazione richiede un indirizzo e-mail (univoco nel sistema) e una password |
-  |**004**     | Gli utenti devono avere la possibilità di cambiare la password |
-  |**005**     | L'admin può aggiungere nuovi moduli |
-  |**006**     | L'admin può gestire le configurazioni (vedi REQ-007) |
+|ID  |REQ-006                                         |
+|----|------------------------------------------------|
+|**Nome**    | Admin e utenti|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**     | Presenza di un form di login e di registrazione |
+|**002**     | L'admin ha accesso a una dashboard di gestione |
+|**003**     | La registrazione richiede un indirizzo e-mail (univoco nel sistema) e una password |
+|**004**     | Gli utenti devono avere la possibilità di cambiare la password |
+|**005**     | L'admin può aggiungere nuovi moduli |
+|**006**     | L'admin può gestire le configurazioni (vedi REQ-007) |
   
 
-  |ID  |REQ-007                                         |
-  |----|------------------------------------------------|
-  |**Nome**    | Configurabilità|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**     | Ogni modulo deve essere configurabile in aspetti quali: soglie di valori interessanti, soglie di valori d'allarme, tempo della durata di una misurazione (p.es. un terremoto che non ha picchi per X minuti è da considerarsi una misurazione conclusa), intervallo di invio delle e-mail |
+|ID  |REQ-007                                         |
+|----|------------------------------------------------|
+|**Nome**    | Configurabilità|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**     | Ogni modulo deve essere configurabile in aspetti quali: soglie di valori interessanti, soglie di valori d'allarme, tempo della durata di una misurazione (p.es. un terremoto che non ha picchi per X minuti è da considerarsi una misurazione conclusa), intervallo di invio delle e-mail |
 
 
-  |ID  |REQ-008                                         |
-  |----|------------------------------------------------|
-  |**Nome**    | Raccolta e confronto dati professionali|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**     | È necessario confrontare i dati raccolti con quelli del SED (http://www.seismo.ethz.ch/) |
-  |**002**     | Questo confronto dev'essere visibile all'utente (sul grafico o tramite tabella) |
-  |**003**     | I dati vengono raccolti a intervalli regolari (non troppo frequenti a causa del traffico generato) |
+|ID  |REQ-008                                         |
+|----|------------------------------------------------|
+|**Nome**    | Raccolta e confronto dati professionali|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**     | È necessario confrontare i dati raccolti con quelli del SED (http://www.seismo.ethz.ch/) |
+|**002**     | Questo confronto dev'essere visibile all'utente (sul grafico o tramite tabella) |
+|**003**     | I dati vengono raccolti a intervalli regolari (non troppo frequenti a causa del traffico generato) |
 
 
-  |ID  |REQ-009                                         |
-  |----|------------------------------------------------|
-  |**Nome**    | Visualizzazione e rappresentazione dati|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**     | I dati raccolti per ogni modulo devono essere mostrati sulla pagina web tramite un grafico con il tempo in ascissa. |
-  |**002**     | L'ordinata del grafico deve essere regolabile da parte dell'utente |
-  |**003**     | Gli ultimi dati salvati (quindi interessanti) vanno mostrati in una tabella |
+|ID  |REQ-009                                         |
+|----|------------------------------------------------|
+|**Nome**    | Visualizzazione e rappresentazione dati|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**     | I dati raccolti per ogni modulo devono essere mostrati sulla pagina web tramite un grafico con il tempo in ascissa. |
+|**002**     | L'ordinata del grafico deve essere regolabile da parte dell'utente |
+|**003**     | Gli ultimi dati salvati (quindi interessanti) vanno mostrati in una tabella |
 
 
-  |ID  |REQ-010                                         |
-  |----|------------------------------------------------|
-  |**Nome**    | Modulabilità|
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |            |**Sotto requisiti** |
-  |**001**     | Ogni modulo rappresenta un 'pacchetto' di file dedito alla misura di una certa condizione (sismografia, temperatura, pressione, ...) |
-  |**002**     | I moduli hanno delle configurazioni che possono essere definite dall'admin (vedi REQ-007) |
-  |**003**     | Ogni modulo dispone della sua sezione sul sito, con tabella nel DB per il salvataggio dei valori e grafico per la visualizzazione |
+|ID  |REQ-010                                         |
+|----|------------------------------------------------|
+|**Nome**    | Modulabilità|
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|            |**Sotto requisiti** |
+|**001**     | Ogni modulo rappresenta un 'pacchetto' di file dedito alla misura di una certa condizione (sismografia, temperatura, pressione, ...) |
+|**002**     | I moduli hanno delle configurazioni che possono essere definite dall'admin (vedi REQ-007) |
+|**003**     | Ogni modulo dispone della sua sezione sul sito, con tabella nel DB per il salvataggio dei valori e grafico per la visualizzazione |
 
 
 ### Use case
