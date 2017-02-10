@@ -47,7 +47,9 @@
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:15 - 15:45   |inizio creazione della struttura di base  di un sito dinamico, creazione del menu con form per il login, presentazione progetto numero 2 |
+|8.20 - 9.40:|Riunione|
+|9.40 - 12.20:|Schema del sito su visio + implementazione|
+|13.15 - 15.45:|Implementazione preloader e studio del grafico|
 
 
 ##  Problemi riscontrati e soluzioni adottate
@@ -63,3 +65,5 @@ Ho riscontrato un "problema" una volta esportato il database da phpmyadmin poich
 Fassora --> fare gantt + finire login + 'formattare' i dati ottenuti dal seismo.ch e salvarli.
 
 Jacopo -- > Per la prossima volta il mio obiettivo è quello di terminare lo schema ER, la creazione del database con il linguaggio SQL, popolarlo e vedere quanto pesa.
+
+diSumma --> Studio di Ajax per il grafico in live
