@@ -10,4 +10,4 @@ create table utenti(
 );
 
 INSERT INTO utenti VALUES (1,'riccardo.disumma@samtrevano.ch','1234',true);
-INSERT INTO utenti VALUES (2,'utente@hotmail.ch','1234',true);
+INSERT INTO utenti VALUES (2,'utente@hotmail.ch','1234',false);
