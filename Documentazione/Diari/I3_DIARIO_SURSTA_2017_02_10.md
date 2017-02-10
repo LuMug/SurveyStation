@@ -1,8 +1,8 @@
 
 
-# PROGETTO | Diario di lavoro - 03.02.2017
+# PROGETTO | Diario di lavoro - 10.02.2017
 
-### Canobbio, 03.02.2017
+### Canobbio, 10.02.2017
 
 ## Lavori svolti
 ##### Jeremy Jornod
@@ -36,9 +36,11 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:15 - 12.20  |Ricerca riguardo ai sensori possibili da utilizzare per il progetto.
-|13.15 - 15.20 |Ricerca riguardo a come trasmettere i dati dall'arduino al webserver.
-|15.30 - 15.45 |Diario        
+|8:15 - 9.15  |Brifing dove abbiamo discusso su cosa fare oggi
+|9.15 - 12.20 | Implementazione del sensore di flessibilità per generare dati da inviare al server
+|13.15 - 14.20 | Lavoro all'invio di dati da arduino a server
+|14.20 - 15.30| Modifica del programma per inviare i dati in modo da renderlo più performante
+|15.30 - 15.45| Diario        
 
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
@@ -47,8 +49,7 @@
 
 
 ##  Problemi riscontrati e soluzioni adottate
-Jacopo -- > Al momento non sono riuscito a trovare un modo per poter far comunicare l'arduino con un server poiché in rete non ho trovato ancora il tutorial che fa al caso mio.
-<br>Nicola e Jeremy --> Mancano i componenti per poter cominciare a implementare il sismografo
+Nicola --> Problema riscontrato con il sensore di flessibilità, i sui dati vengono rilevati solo quando c'è una grossa pressione su di esso, in pratica non è abbastanza sensibile, la soluzione che ho adottato è di utilizzare un potenziomentro per la generazione dei dati che devo inviare (Soluzione fino a quando non avremo il sensore apposito per generare i dati).
 
 ##  Punto della situazione rispetto alla pianificazione
 
