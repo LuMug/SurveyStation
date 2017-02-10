@@ -60,5 +60,6 @@ Ho riscontrato un "problema" una volta esportato il database da phpmyadmin poich
 
 
 ## Programma di massima per la prossima giornata di lavoro
-Fassora --> fare gantt + finire login + 'formattare' i dati ottenuti dal seismo.ch e salvarli
+Fassora --> fare gantt + finire login + 'formattare' i dati ottenuti dal seismo.ch e salvarli.
+
 Jacopo -- > Per la prossima volta il mio obiettivo è quello di terminare lo schema ER, la creazione del database con il linguaggio SQL, popolarlo e vedere quanto pesa.
