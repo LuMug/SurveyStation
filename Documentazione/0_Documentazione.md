@@ -136,6 +136,7 @@
 
 ### Analisi e specifica dei requisiti
 
+
   |ID  |REQ-001                                         |
   |----|------------------------------------------------|
   |**Nome**    |Stazione di rilevamento |
@@ -147,6 +148,7 @@
   |**002**      | Pagina web per la consultazione dei dati |
   |**003**      | Raccolta dei dati interessanti |  
   |**004**      | Sito hostato da http://www.samtinfo.ch                 |
+  
 
   |ID  |REQ-002                                         |
   |----|------------------------------------------------|
@@ -157,6 +159,7 @@
   |            |**Sotto requisiti** |
   |**001**      | Costruzione di un sismografo in grado di rilevare le vibrazioni del terreno |
   |**002**      | Lo stesso (tramite Arduino o simili) deve essere in grado di inviare i dati al server |
+  
 
   |ID  |REQ-003                                         |
   |----|------------------------------------------------|
@@ -167,6 +170,7 @@
   |            |**Sotto requisiti** |
   |**001**      | Sulla base del sismografo dev'essere possibile aggiungere altri strumenti di misura alla stazione (p.es. barometro o termometro) |
   |**002**      | Di nuovo sulla base del sismografo la stazione deve inviare i dati al server |
+  
 
   |ID  |REQ-004                                         |
   |----|------------------------------------------------|
@@ -177,6 +181,7 @@
   |            |**Sotto requisiti** |
   |**001**      | Non è necessario salvare a lungo termine tutti i dati ricevuti dalla stazione|
   |**002**      | Quando i valori entrano in una soglia interessante i dati vengono raccolti e archiviati|
+  
 
   |ID  |REQ-005                                         |
   |----|------------------------------------------------|
@@ -190,6 +195,7 @@
   |**003**      | Sulla pagina web viene mostrato l'allarme |
   |**004**      | Le e-mail vengono inviate a intervalli regolari in caso di allarme (timespan configurabile), per evitare l'invio continuo all'utente |
   |**005**      | Deve essere presente una notifica anche sulla stazione fisica (p.es un LED) |
+  
 
   |ID  |REQ-006                                         |
   |----|------------------------------------------------|
@@ -204,6 +210,7 @@
   |**004**     | Gli utenti devono avere la possibilità di cambiare la password |
   |**005**     | L'admin può aggiungere nuovi moduli |
   |**006**     | L'admin può gestire le configurazioni (vedi REQ-007) |
+  
 
   |ID  |REQ-007                                         |
   |----|------------------------------------------------|
