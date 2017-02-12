@@ -15,7 +15,7 @@
 |10.10 - 12.20: |Test collegamento ethernet al WAMP server in locale. Non è facile: Ho fatto vari tentativi ma c'è sempre qualcosa che non va. Lo scopo è quello di generare un numero random da Arduino è inserirlo in una tabella.|
 |13.15 - 14.40: |Trasferire i file da Arduino al Database.|
 |15.15 - 15.30: |Dati in loop, aggiunta campo data e orario.|
-|15.30 - 15.45: |Dati in loop, aggiunta campo data e orario.|
+|15.30 - 15.45: |Diario.|
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
