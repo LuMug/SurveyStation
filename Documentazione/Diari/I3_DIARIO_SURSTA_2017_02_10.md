@@ -68,5 +68,4 @@ Jacopo -- > Per la prossima volta il mio obiettivo è quello di terminare lo sch
 
 diSumma --> Studio di Ajax per il grafico in live
 
-Jornod -->  - Relazionare Arduino - Database - Grafico
-            - Sistemare il codice e renderlo il più snello possibile
+Jornod -->  Relazionare Arduino - Database - Grafico + Sistemare il codice e renderlo il più snello possibile. 
