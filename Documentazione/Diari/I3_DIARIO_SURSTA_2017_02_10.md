@@ -9,13 +9,13 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8.20 - 9.40:|Ricerca sul componente "Grove - Vibrator 047 906". Io e Nicola abbiamo preparato la posdtazione per l'Arduino e abbiamo organizzato il materiale.|
-|9.40 - 10.10:|Primi test sul componente. Abbiamo preparato codice e collegamenti. |
-|10.10 - 10.40:|Abbiamo scoperto che il componente che ci ha dato Mussi è un vibratore e non un sensore di vibrazioni.|
-|10.40 - 12.20:|Abbiamo provato ad usare un altro componente: TiltSensor. Serve a catturare una vibrazione in modo molto grezzo. Dice solo se c'è stata o no. Non cattura la potenza. |
-|13.15 - 14.20:|Ricerche sulla sismografia. |
-|14.20 - 15.20:|Ricerca sul trasferimento dati da Arduino a database. Ci sono due soluzioni valide: Via file.txt o Via Ethernet. |
-|15.20 - 15.45| Diario.|
+|8.20 - 9.20: |Riunione: Discussione sulla settimana precedente, settimana corrente e assegnazione dei lavori.|
+|9.20 - 10.00: |Collegare due schede Arduino tra di loro.|
+|10.00 - 10.10: |E' arrivato il componente che cercavamo settimana scorsa per inserire il codice a Arduino. Funziona.|
+|10.10 - 12.20: |Test collegamento ethernet al WAMP server in locale. Non è facile: Ho fatto vari tentativi ma c'è sempre qualcosa che non va. Lo scopo è quello di generare un numero random da Arduino è inserirlo in una tabella.|
+|13.15 - 14.40: |Trasferire i file da Arduino al Database.|
+|15.15 - 15.30: |Dati in loop, aggiunta campo data e orario.|
+|15.30 - 15.45: |Dati in loop, aggiunta campo data e orario.|
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
@@ -67,3 +67,6 @@ Fassora --> fare gantt + finire login + 'formattare' i dati ottenuti dal seismo.
 Jacopo -- > Per la prossima volta il mio obiettivo è quello di terminare lo schema ER, la creazione del database con il linguaggio SQL, popolarlo e vedere quanto pesa.
 
 diSumma --> Studio di Ajax per il grafico in live
+
+Jornod -->  - Relazionare Arduino - Database - Grafico
+            - Sistemare il codice e renderlo il più snello possibile
