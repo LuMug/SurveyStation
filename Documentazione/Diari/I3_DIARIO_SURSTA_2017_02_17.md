@@ -38,11 +38,8 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:15 - 9.15  |Brifing dove abbiamo discusso su cosa fare oggi
-|9.15 - 12.20 | Implementazione del sensore di flessibilità per generare dati da inviare al server
-|13.15 - 14.20 | Lavoro all'invio di dati da arduino a server
-|14.20 - 15.30| Modifica del programma per inviare i dati in modo da renderlo più performante
-|15.30 - 15.45| Diario        
+|8:15 - 15.30 | Ricerche e sviluppo riguardo all'utilizzo del giroscopio MMA8452q
+|15.30 - 15.45| Diario       
 
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
@@ -53,19 +50,11 @@
 
 
 ##  Problemi riscontrati e soluzioni adottate
-Nicola --> Problema riscontrato con il sensore di flessibilità, i sui dati vengono rilevati solo quando c'è una grossa pressione su di esso, in pratica non è abbastanza sensibile, la soluzione che ho adottato è di utilizzare un potenziomentro per la generazione dei dati che devo inviare (Soluzione fino a quando non avremo il sensore apposito per generare i dati).
+Nicola --> Problema con la concatenazione di due stringhe, risolto con l'utilizzo di due Serial.print
 
-Jacopo --> Durante il colloquio è saltato fuori che l'utilizzo di phpmyadmin per gestire il database non fosse la soluzione più idonea. Per ovviare a questo problema ho utilizzato workbench.
-Ho riscontrato un "problema" una volta esportato il database da phpmyadmin poiché il file che conteneva il codice per la creazione era "complicato". Dato che Fassora necessita di prendere le informazioni dal database gli serve la struttura più semplice possibile. Quindi ho riscritto la query che creasse il database e la tabella e successivamente ho messo il file su github.
 
 ##  Punto della situazione rispetto alla pianificazione
 
 
 ## Programma di massima per la prossima giornata di lavoro
-Fassora --> fare gantt + finire login + 'formattare' i dati ottenuti dal seismo.ch e salvarli.
 
-Jacopo -- > Per la prossima volta il mio obiettivo è quello di terminare lo schema ER, la creazione del database con il linguaggio SQL, popolarlo e vedere quanto pesa.
-
-diSumma --> Studio di Ajax per il grafico in live
-
-Jornod -->  Relazionare Arduino - Database - Grafico + Sistemare il codice e renderlo il più snello possibile. 
