@@ -24,16 +24,15 @@
 |14:30 - 15:45 |Script di login e registrazione (da finire) |
 
 ##### Jacopo Greppi
-|Orario        |Lavoro svolto                                     				  					  										                          |
+|Orario        |Lavoro svolto|
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-|8:15 - 9:15   |Colloquio col docente per fare il punto della situazione e decidere cosa fare durante la giornata di lavoro. Sono stati chiariti alcuni dubbi.        |
-|9:15 - 10:15  |Creazione del database con la tabella utente tramite l'utilizzo di workbench. Una volta creato è stato esportato per poi metterlo in comune su github.|
-|10:15 - 11:30 |Creazione tabella di prova alla quale inviare i dati e ricerca di come inviare i dati dall'arduino ad una tabella mysql.                              |
-|11:30 - 11:50 |Progettazione del flusso.                                                                                                                             |
-|11:30 - 13:30 |Progettazione del database.                                                                                                                           |
-|13:30 - 14:45 |Raffigurazione della progettazione su Visio.																										  |
-|15:00 - 15:30 |Stesura della struttura ipotetica dello schema ER del database. Inizio delle realizzazione dello schema effettivo.                                    |
-|15:30 - 15:45 |Stesura del diario.                                                                                                                                   |
+|8:15 - 8:35   |Brefing con il docente responsabile per fare il punto della situazione e per decidere i compiti odierni.|
+|8:35 - 9:20   |Creazione dello schema ER del database.|
+|9:20 - 11:30  |Creazione del database utilizzando MySql, basandosi sullo schema ER e sulla progettazione concettuale di settimana scorsa e popolarlo con dei dati generati randomicamente da un software in rete.|
+|11:30 - 11:40 |Sistemazione dello schema ER in base alle modifiche apportate durante la creazione del database e del sui popolamento.|
+|11:40 - 12.20 |Su consiglio del docente responsabile, ho reinstallato un programma che permettesse di usare github offline e di fare l'upload dei dati modificati quando necessario.|
+|13:15 - 14:10 |Miglioramento della struttura del database, inserimento di nuovi dati e aggiunta delle varie tabelle nel database caricato sull'host del progetto.|
+|14:10 - 15:45 |Dato che nel progetto si dovranno usare dei trigger, ho cercato di svolgere gli esercizi inerenti questo argomento. Gli esercizi sono quelli iniziati nel modulo 141|
 
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
@@ -51,10 +50,11 @@
 
 ##  Problemi riscontrati e soluzioni adottate
 Nicola --> Problema con la concatenazione di due stringhe, risolto con l'utilizzo di due Serial.print
-
+Jacopo --> Nell'installazione di sourcetree il proxy ha dato nuovamente problemi generando un errore. La cosa curiosa è che il mio computer non è connesso ad internet con la rete scolastica, ma con un hotspot (con il permesso del docente). Ho quindi scaricato "github desktop" per ovviare al problema. 
 
 ##  Punto della situazione rispetto alla pianificazione
 
 
 ## Programma di massima per la prossima giornata di lavoro
+Jacopo -->La settimana prossima inizierò a progettare dei trigger specifici per il progetto. Inizierò con fare un trigger che quando legge un valore che supera una certa soglia, inizia a copiare i dati nella tabella shake
 
