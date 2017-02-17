@@ -43,9 +43,10 @@
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8.20 - 9.40:|Riunione|
-|9.40 - 12.20:|Schema del sito su visio + implementazione|
-|13.15 - 15.45:|Implementazione preloader e studio del grafico|
+|8.20 - 8.35:|Riunione|
+|8.35 - 10.00:|Gantt|
+|10.00 - 12:20:|Studio di Ajax per il grafico live|
+|13.15 - 15.45:|Pushato il sito sul dominio e risolti vari problemi di compatibilità, sia desktop che mobile|
 
 
 ##  Problemi riscontrati e soluzioni adottate
