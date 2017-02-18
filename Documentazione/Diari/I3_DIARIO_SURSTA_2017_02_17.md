@@ -19,9 +19,10 @@
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 12:20   |Raccolta dati da seismo.ethz.ch, come salvarli |
-|13:15 - 14:30 | Scrittura requisiti |
-|14:30 - 15:45 |Script di login e registrazione (da finire) |
+|8:20 - 10:00   |Gantt |
+|10:00 - 12:20 | Revisione requisiti |
+|13:15 - 14:00 |Schema funzionamento del sistema |
+|14:00 - 15:45 | Login |
 
 ##### Jacopo Greppi
 |Orario        |Lavoro svolto|
@@ -51,7 +52,10 @@
 
 ##  Problemi riscontrati e soluzioni adottate
 Nicola --> Problema con la concatenazione di due stringhe, risolto con l'utilizzo di due Serial.print
+
 Jacopo --> Nell'installazione di sourcetree il proxy ha dato nuovamente problemi generando un errore. La cosa curiosa è che il mio computer non è connesso ad internet con la rete scolastica, ma con un hotspot (con il permesso del docente). Ho quindi scaricato "github desktop" per ovviare al problema. 
+
+Jonathan --> Con la migrazione di samtinfo lo script di login con mysql non andava più, quindi sono passato a mysqli
 
 ##  Punto della situazione rispetto alla pianificazione
 
