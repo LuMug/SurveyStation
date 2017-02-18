@@ -63,3 +63,5 @@ Jonathan --> Con la migrazione di samtinfo lo script di login con mysql non anda
 ## Programma di massima per la prossima giornata di lavoro
 Jacopo -->La settimana prossima inizierò a progettare dei trigger specifici per il progetto. Inizierò con fare un trigger che quando legge un valore che supera una certa soglia, inizia a copiare i dati nella tabella shake
 
+Jonathan/Riccardo --> Studiamo dietro a un modo di visualizzare efficacemente i dati, siccome è probabilmente un lavoro più complicato del previsto
+
