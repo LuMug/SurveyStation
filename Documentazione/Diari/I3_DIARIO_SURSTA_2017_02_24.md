@@ -22,11 +22,11 @@
 |15:00 - 15:45 |Analisi del dominio |
 
 ##### Jacopo Greppi
-|Orario        |Lavoro svolto                                     |
-|--------------|--------------------------------------------------|
-|8:15 - 12:20  |Revisione presentazione progetto 2 e presentazione|
-|13:15 - 15:30 |comprensione mandato e domande al mandante        |
-|15:30 - 15:45 |Stesura diario                                    |
+|Orario        |Lavoro svolto|
+|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|8:20 - 12:20  |Creazione di un trigger che permette di copiare in dati nella tabella shake una volta che nella tabella sismografo viene rilevato un valore superiore ad un numero stabilito|
+|13:15 - 15:30 |Ricerca di come svolgere funzioni in Sql e di come poterle applicare al progetto.|
+|15:30 - 15:45 |Stesura del diario.|                                  |
 
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
@@ -44,13 +44,15 @@
 
 ##  Problemi riscontrati e soluzioni adottate
 -Riccardo & Jonathan --> Problemi con il database e con l'hashing dei password (Risolto)
+Jacopo -- > Ho avuto difficoltà nel riuscire a far svolgere l'operazione desiderata al trigger. Dopo averci sbattuto la testa non poco tempo, ho chiesto aiuto al professor Sartori e assieme siamo riusciti a sistemare il codice.
+
 
 ##  Punto della situazione rispetto alla pianificazione
 
 
 ## Programma di massima per la prossima giornata di lavoro
 -Riccardo & Jonathan --> Visualizzare i dati probabilmente con highcharts e ajax (o in modo analogo)
-
+Jacopo --> La prossima volta deciderò con il docente cosa implementare nella funzione mysql. Nel frattempo cercherò di documentarmi sulla loro sintassi. 
 
 ###### link interessanti
 
