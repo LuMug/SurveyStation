@@ -4,13 +4,10 @@ use surveystation;
 create table utenti(
   `ID_Utente` int(11) AUTO_INCREMENT not null,
   `Email` varchar(50) NOT NULL,
-  `Password` varchar(50) NOT NULL,
+  `Password` varchar(255) NOT NULL,
   `Amministratore` tinyint(1) NOT NULL,
   PRIMARY KEY (`ID_Utente`)
 );
-
-INSERT INTO utenti VALUES (null,'riccardo.disumma@samtrevano.ch','1234',true);
-INSERT INTO utenti VALUES (null,'utente@hotmail.ch','1234',false);
 
 create table configurazione(
   `ID_Configurazione` int(11) AUTO_INCREMENT not null,
