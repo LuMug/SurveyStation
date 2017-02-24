@@ -31,8 +31,8 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:15 - 13.45  |Presentazione progetti precedenti|
-|13.45 - 15.10 |Ricerca riguardo al sismografo   |
+|-|Assente|
+
 
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
