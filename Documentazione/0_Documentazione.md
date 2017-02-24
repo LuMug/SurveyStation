@@ -74,6 +74,9 @@
 
 ### Analisi del dominio
 
+  Il prodotto dovrà lavorare in un contesto scolastico e 'artigianale', come forma di raccolta e visualizzazione dati più per curiosi che per professionisti. La pagina sarà dunque ovviamente limitata, l'intenzione non è quella di creare un centro geologico o metereologico, ma di avere una piccola stazione di rilevamento e misurazione. L'idea è dunque quella di costruire una 'miniatura' di siti professionali (p.es. sed.ch) in modo, come detto, artigianale e 'casalingo'.
+
+  Per fare ciò è necessario anche un piccolo lavoro di ricerca per capire i fenomeni con cui si sta lavorando e soprattutto i numeri che si stanno raccogliendo. Una volta compresi determinati concetti si sarà così in grado di migliorare la misurazione e la presentazione dei dati. Proprio questa presentazione deve riuscire ad essere adeguata al pubblico cui si rivolge, ovvero non necessariamente geologi diplomati, ma più probabilmente dei curiosi che vogliono sapere qualcosa in più, o semplicemente fare una piccola analisi degli ultimi dati ottenuti.
 
 ### Analisi e specifica dei requisiti
 
