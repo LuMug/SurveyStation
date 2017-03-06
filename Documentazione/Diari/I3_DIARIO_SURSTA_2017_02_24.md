@@ -9,9 +9,11 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 9:00   |Consegna del mandato e gruppi |
-|9:00 - 11:30 |Analisi e suddivisione del lavoro  |
-|12:20 - 15:45   |Ricerca sul sismografo e varie possibilità di realizzazione e componenti |
+Lavoro svolto:
+|8.20 - 9.15: |Ho relazionato Arduino al database di Greppi. Sorgeva però un errore di sintassi e ho perso molto tempo prima di risolverlo. Ho riscritto le linee critiche (query) ad una ad una e il problema si è risolto.|
+|9.15 - : 11.00 |Richiamare una pagina PHP con Arduino.|
+|11.00 - 11.45: |Ho collegato Arduino al server di Riccardo. Inizialmente non riuscivo, poi analizzando la macchina ho visto che il firewall era attivo, lo ho disattivato e sono riuscito a connettermi. Ora il database si riempie con i dati ricavati da Arduino.|
+|11.45 - 12.20: .|Richiamare una pagina PHP con Arduino.|
 
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
