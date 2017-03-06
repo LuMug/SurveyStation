@@ -9,7 +9,6 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-Lavoro svolto:
 |8.20 - 9.15: |Ho relazionato Arduino al database di Greppi. Sorgeva però un errore di sintassi e ho perso molto tempo prima di risolverlo. Ho riscritto le linee critiche (query) ad una ad una e il problema si è risolto.|
 |9.15 - : 11.00 |Richiamare una pagina PHP con Arduino.|
 |11.00 - 11.45: |Ho collegato Arduino al server di Riccardo. Inizialmente non riuscivo, poi analizzando la macchina ho visto che il firewall era attivo, lo ho disattivato e sono riuscito a connettermi. Ora il database si riempie con i dati ricavati da Arduino.|
