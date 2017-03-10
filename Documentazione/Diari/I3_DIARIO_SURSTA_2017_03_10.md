@@ -32,8 +32,11 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:15 - 13.45  |Presentazione progetti precedenti|
-|13.45 - 15.10 |Ricerca riguardo al sismografo   |
+|8:15 - 10.30   |Visto che usando il codice dell'altra volta non si riusciva ad ottenere ciò che si voleva, ho cercato delle soluzioni alternative          |
+|10:30 - 12.20 |Non avendo trovato nulla che facesse al caso mio, sono tornato sul codice precedente e sono riuscito ad eliminare gli errori che non lo facevano funzionare. (Ora ritorna X,Y,Z in base alla posizione dell'accelerometro)     |
+|13.15 - 15.00           | Ho cercato un modo per convertire x,y,z (accelerazione) nella scala richter                           |
+|15.00 - 15.30| Cercato una soluzione per creare una struttura per il sensore (es: https://sergiodavidmercadovera.wordpress.com/2015/07/07/sismografoseismograph/)|
+|15.30 -15.45| Diario|
 
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
