@@ -23,9 +23,11 @@
 ##### Jacopo Greppi
 |Orario        |Lavoro svolto                                     |
 |--------------|--------------------------------------------------|
-|8:15 - 12:20  |Revisione presentazione progetto 2 e presentazione|
-|13:15 - 15:30 |comprensione mandato e domande al mandante        |
-|15:30 - 15:45 |Stesura diario                                    |
+|8:20 - 9:00   | Lettura e comprensione del powerpoint riguardante il tema delle "stored procedures" per il lavoro da svolgere|
+|9:00 - 9:45   | Visita di vari forum e del sito di Mysql per comprendere meglio il tema|
+|10:05 - 12:20 | Ho tentato di svolgere il primo esercizio della serie riguardante gli stored procedures vista durante il modulo 141|
+|13:15 - 15:30 | Ho tentato di svolgere gli altri esercizi della serie e ho consultato altri forum per cercare di risolvere i problemi da me riscontrati| 
+|15.30 - 15:45 | Gli ultimi minuti sono stati dedicati alla stesura del diario della lezione odierna|                              |
 
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
@@ -41,13 +43,14 @@
 
 
 ##  Problemi riscontrati e soluzioni adottate
+Jacopo --> Ho avuto problemi nel risolvere gli esercizi poichò i codici da me inseriti non svolgevano le funzioni pensate. Ho provato a rimediare cercando degli aiuti in diversi forum, ma niente da fare.
 
 
 ##  Punto della situazione rispetto alla pianificazione
 
 
 ## Programma di massima per la prossima giornata di lavoro
-
+Jacopo --> La prossima lessione punto a capire per bene la sintassi degli stored procedures e ad implementare quello che devo fare (una procedura che dopo un determinato periodo elimina tutti i dati non necessari).
 
 
 
