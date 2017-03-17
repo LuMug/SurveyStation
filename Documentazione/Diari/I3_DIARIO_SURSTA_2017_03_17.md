@@ -23,11 +23,13 @@
 ##### Jacopo Greppi
 |Orario        |Lavoro svolto                                     |
 |--------------|--------------------------------------------------|
-|8:20 - 9:00   | Lettura e comprensione del powerpoint riguardante il tema delle "stored procedures" per il lavoro da svolgere|
-|9:00 - 9:45   | Visita di vari forum e del sito di Mysql per comprendere meglio il tema|
-|10:05 - 12:20 | Ho tentato di svolgere il primo esercizio della serie riguardante gli stored procedures vista durante il modulo 141|
-|13:15 - 15:30 | Ho tentato di svolgere gli altri esercizi della serie e ho consultato altri forum per cercare di risolvere i problemi da me riscontrati| 
-|15.30 - 15:45 | Gli ultimi minuti sono stati dedicati alla stesura del diario della lezione odierna|                              |
+|8:20 - 8:35   |Preparazione della postazione di lavoro (accensione computer, collegamento all'alimentazione, apertura dei programmi necessari)|
+|8:35 - 9:00   |Briefing con il docente per fare il punto della situazione e per decidere che cosa fare durante la giornata odierna di lavoro|
+|9:00 - 11:30  |Verifica del trigger che, una volta letto un certo valore, inizia a copiare i dati importanti nella tabella shake. (Abbiamo sistemato la condizione per la quale prende i dati, l'identificativo del terremoto a cui appartiene e abbiamo aggiunto una procedura che immagazzina i dati precedenti al picco rilevato)|
+|11:30 - 12:20 |Ho messo in Github il codice scritto nel punto precedente, ho dovuto fare una piccola modificare nella tabella Shake. Ho invertito i capi 'ID_Sismografo' e 'ID_Shake' per un fattore di logica. Invertendo i due campi, ho dovuto invertili anche nel trigger e nella procedura.|
+|13:15 - 14:30 |Ho commentato tutte le parti di codice scritte in mattinata (trigger, procedure, if, select) così la prossima volta che lo leggerò mi ritroverò subito. Ho aggiunto un campo nella tabella degli utenti ('EmailOk') e ho aggiornato lo schema ER e ho caricato le modifiche su GitHub|.
+|14:30 - 15:30 |Si vuole fare in modo che certi dati che vengono utilizzati nei trigger e nelle procedure. Quindi sarebbe comodo che siano già configurati in un'ulteriore tabella. Se nella procedura dico che se sono passati 30 minuti e non sono stati registrati dati interessanti, il "30" deve essere all'interno della tabella configurazione così se volessi cambiare questa tempistica mi basterebbe cambiare il valore in quella tabella. Renderebbe molto più ordinato e performante il tutto. Io ho cercato un modo per prendere ed usare quest'informazione.|
+|15:30 - 15:45 |Gli ultimi minuti sono stati dedicati alla stesura del diario della lezione odierna.|
 
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
@@ -46,14 +48,16 @@
 
 
 ##  Problemi riscontrati e soluzioni adottate
-Jacopo --> Ho avuto problemi nel risolvere gli esercizi poichò i codici da me inseriti non svolgevano le funzioni pensate. Ho provato a rimediare cercando degli aiuti in diversi forum, ma niente da fare.
+Oggi non si sono verificati particolari problemi. È stata alquanto tosta la stesura del codice del trigger e della procedura ad esso collegata. Dopo 2 ore di lavoro il trigger svolgeva ciò che doveva fare.
+
 
 
 ##  Punto della situazione rispetto alla pianificazione
 
 
 ## Programma di massima per la prossima giornata di lavoro
-Jacopo --> La prossima lessione punto a capire per bene la sintassi degli stored procedures e ad implementare quello che devo fare (una procedura che dopo un determinato periodo elimina tutti i dati non necessari).
+La prossima volta punto a trovare un modo per risolvere ciò che ho cercato di trovare tra le 14:30 e le 15:30 (vedi tabella oraria qui sopra). Vedrò anche di creare una procedura che elimini i dati dei quali non abbiamo più bisogno.
+
 
 Jeremy --> Finire pagina PHP
        --> Finire collegamento Accelerometro - Arduino - Database
