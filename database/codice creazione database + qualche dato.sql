@@ -43,7 +43,7 @@ create table shake(
   `Valore_X` double NOT NULL,
   `Valore_Y` double NOT NULL,
   `Valore_Z` double NOT NULL,
-  PRIMARY KEY (`ID_Shake`,`ID_Sismografo`) 
+  PRIMARY KEY (`ID_Sismografo`,`ID_Shake`) 
 );
 
 create table sismografo  (
