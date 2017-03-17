@@ -32,11 +32,11 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:15 - 10.30   |Visto che usando il codice dell'altra volta non si riusciva ad ottenere ciò che si voleva, ho cercato delle soluzioni alternative          |
-|10:30 - 12.20 |Non avendo trovato nulla che facesse al caso mio, sono tornato sul codice precedente e sono riuscito ad eliminare gli errori che non lo facevano funzionare. (Ora ritorna X,Y,Z in base alla posizione dell'accelerometro)     |
-|13.15 - 15.00           | Ho cercato un modo per convertire x,y,z (accelerazione) nella scala richter                           |
-|15.00 - 15.30| Cercato una soluzione per creare una struttura per il sensore (es: https://sergiodavidmercadovera.wordpress.com/2015/07/07/sismografoseismograph/)|
-|15.30 -15.45| Diario|
+|8:20 - 10.30  |Ho unito il codice che riceve i dati dell'accelerometro e quello che invia i dati in un database
+|10.30 - 12.20 |Ho cercato una soluzione agli errori che sono stati generati dall'unione dei due codici
+|13.15 - 14.00|Continuato con il tentativo di correggere gli errori|
+|14.00 - 15.20|Pensato ad una soluzione per la creazione del contenitore del sismografo|   
+|15.20 - 15.45|Diario|  
 
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
