@@ -16,9 +16,9 @@
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 11:00   |Invio dati da DB a di Summa |
-|11:00 - 12:20   |Piccola ricerca sui valori ricevuti dagli accelerometri |
-|13:15 - 15:45 |Grafico live tramite ajax |
+|8:20 - 15:45   |Grafico live multilinea|
+|x - x   |Vari fix (login, configurabilità di qualcosa)|
+
 
 ##### Jacopo Greppi
 |Orario        |Lavoro svolto                                     |
@@ -43,8 +43,8 @@
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 12:20   |Prima versione del grafico live con iframe che refresha |
-|13:15 - 15:45 |Grafico live tramite ajax |
+|8:20 - 15:45   |Grafico live multilinea|
+|x - x   |Vari fix (login, configurabilità di qualcosa)|
 
 
 ##  Problemi riscontrati e soluzioni adottate
@@ -61,5 +61,6 @@ La prossima volta punto a trovare un modo per risolvere ciò che ho cercato di t
 
 Jeremy --> Finire pagina PHP
        --> Finire collegamento Accelerometro - Arduino - Database
+      
 
 
