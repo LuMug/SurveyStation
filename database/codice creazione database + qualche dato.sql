@@ -7,6 +7,7 @@ create table utenti(
   `Email` varchar(50) NOT NULL,
   `Password` varchar(50) NOT NULL,
   `Amministratore` tinyint(1) NOT NULL,
+  `EmailOk` tinyint(1) NOT NULL,
   PRIMARY KEY (`ID_Utente`)
 );
 
