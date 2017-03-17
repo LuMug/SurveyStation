@@ -5,6 +5,14 @@
 ### Canobbio, 17.03.2017
 
 ## Lavori svolti
+##### Jeremy Jornod
+|Orario        |Lavoro svolto                 |
+|--------------|------------------------------|
+|8.20 - 9.10 | Riunione|
+|9.10 - 9.30 | Collegamento codice accelerometro - database Arduino |
+|9.30 - 14.00 |Richiamare una pagina PHP con Arduino: Database, pagine PHP, codice Arduino. Ancora non funzionante.|
+|14.00 - 15.45 |Collegamento codice accelerometro - database Arduino. Ci sono dei problemi nel momento di trasferire i dati rivelati. Ci sono due scale diverse.|
+
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
@@ -46,5 +54,8 @@ Jacopo --> Ho avuto problemi nel risolvere gli esercizi poichò i codici da me i
 
 ## Programma di massima per la prossima giornata di lavoro
 Jacopo --> La prossima lessione punto a capire per bene la sintassi degli stored procedures e ad implementare quello che devo fare (una procedura che dopo un determinato periodo elimina tutti i dati non necessari).
+
+Jeremy --> Finire pagina PHP
+       --> Finire collegamento Accelerometro - Arduino - Database
 
 
