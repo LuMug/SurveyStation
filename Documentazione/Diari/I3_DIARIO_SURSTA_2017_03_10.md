@@ -5,14 +5,6 @@
 ### Canobbio, 27.01.2017
 
 ## Lavori svolti
-##### Jeremy Jornod
-
-|Orario        |Lavoro svolto                 |
-|--------------|------------------------------|
-|8:20 - 9:00   |Consegna del mandato e gruppi |
-|9:00 - 11:30 |Analisi e suddivisione del lavoro  |
-|12:20 - 15:45   |Ricerca sul sismografo e varie possibilità di realizzazione e componenti |
-
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
