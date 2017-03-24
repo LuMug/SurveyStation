@@ -9,10 +9,9 @@
 ##### Jeremy Jornod
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8.20 - 9.10 | Riunione|
-|9.10 - 9.30 | Collegamento codice accelerometro - database Arduino |
-|9.30 - 14.00 |Richiamare una pagina PHP con Arduino: Database, pagine PHP, codice Arduino. Ancora non funzionante.|
-|14.00 - 15.45 |Collegamento codice accelerometro - database Arduino. Ci sono dei problemi nel momento di trasferire i dati rivelati. Ci sono due scale diverse.|
+|8.20 - 9.20: | Abbiamo sistemato la scala dei valori che non andava settimana scorsa. Praticamente i valori erano dei float e noi li mandavamo al database come double. Ora funziona. Abbiamo cambiao metodi.|
+|9.20 - 15.45: | Richiamare una pagina PHP con Arduino: Database, pagine PHP, codice Arduino. C'è un problema a livello di server. Devo capire come cambiare i permessi. |
+
 
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
@@ -54,14 +53,14 @@ Oggi non si sono verificati particolari problemi. È stata alquanto tosta la ste
 
 
 ##  Punto della situazione rispetto alla pianificazione
-
+Jeremy --> Finire collegamento Accelerometro - Arduino - Database: fatto
 
 ## Programma di massima per la prossima giornata di lavoro
 Jonathan / Riccardo --> Ricordarsi di fare piccolo controllo se admin che la query non funziona
 
 
 Jeremy --> Finire pagina PHP
-       --> Finire collegamento Accelerometro - Arduino - Database
+
       
 <img src='funge.PNG'>
 
