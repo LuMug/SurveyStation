@@ -34,6 +34,8 @@ create table vibrazione_FIX(
   PRIMARY KEY AUTO_INCREMENT (`ID`)
 )ENGINE = MEMORY;
 
+alter table vibrazione_FIX add foreign key (ID_Vibrazione_MEM) REFERENCES vibrazione_MEM (ID) ON DELETE CASCADE;
+
 create table shake(
   `ID_Sismografo` int(11) not null,
   `ID` int(11) not null AUTO_INCREMENT,
@@ -42,7 +44,7 @@ create table shake(
   `Valore_Y` double NOT NULL,
   `Valore_Z` double NOT NULL,
   PRIMARY KEY (`ID`) 
-);
+)ENGINE=MEMORY;
 
 create table sismografo  (
   `ID` int(11) AUTO_INCREMENT not null,
@@ -52,6 +54,10 @@ create table sismografo  (
   `Valore_Z` double NOT NULL,  
   PRIMARY KEY (`ID`) 
 )ENGINE=MEMORY;
+
+#drop table shake;
+alter table shake add foreign key (ID_Sismografo) REFERENCES sismografo (ID) ON DELETE CASCADE;
+
 
 insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (1, 1, 1);
 insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (1, 1, 2);
