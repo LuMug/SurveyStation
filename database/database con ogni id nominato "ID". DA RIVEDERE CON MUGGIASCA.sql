@@ -4,18 +4,18 @@ use surveystation;
 
 create table utenti(
   `ID` int(11) AUTO_INCREMENT not null,
-  `Email` varchar(50) NOT NULL,
-  `Password` varchar(50) NOT NULL,
+  `Email` varchar(60) NOT NULL,
+  `Password` varchar(60) NOT NULL,
   `Amministratore` tinyint(1) NOT NULL,
-  `Email_notification`tinyint(1) NOT NULL,
+  `Email_notification`tinyint(1) NOT NULL default 0,
   PRIMARY KEY (`ID`)
 );
 
 
 create table configurazione(
   `ID` int(11) AUTO_INCREMENT not null,
-  `Parametro` varchar(50) NOT NULL,
-  `Valore` varchar(50) NOT NULL,
+  `Parametro` varchar(60) NOT NULL,
+  `Valore` varchar(60) NOT NULL,
   PRIMARY KEY (`ID`)
 );
 
