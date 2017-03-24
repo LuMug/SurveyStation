@@ -63,5 +63,5 @@ Jonathan / Riccardo --> Ricordarsi di fare piccolo controllo se admin che la que
 Jeremy --> Finire pagina PHP
        --> Finire collegamento Accelerometro - Arduino - Database
       
-
+<img src='funge.png'>
 
