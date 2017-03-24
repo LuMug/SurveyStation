@@ -3,12 +3,11 @@ create database surveystation;
 use surveystation;
 
 create table utenti(
-  `ID_Utente` int(11) AUTO_INCREMENT not null,
-  `Email` varchar(60) NOT NULL unique,
+  `Email` varchar(60) AUTO_INCREMENT NOT NULL unique,
   `Password` varchar(60) NOT NULL,
   `Amministratore` tinyint(1) NOT NULL,
   `Email_notification`tinyint(1) NOT NULL default 0,
-  PRIMARY KEY (`ID_Utente`)
+  PRIMARY KEY (`Email`)
 );
 
 
