@@ -17,8 +17,8 @@
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 15:45   |Grafico live multilinea|
-|x - x   |Vari fix (login, configurabilità di qualcosa)|
+|8:20 - 12:20   |Grafico live con dati reali, x y z|
+|12:20 - 15:45   |Configurazioni dell'amministratore + fix registrazione|
 
 
 ##### Jacopo Greppi
@@ -57,7 +57,7 @@ Oggi non si sono verificati particolari problemi. È stata alquanto tosta la ste
 
 
 ## Programma di massima per la prossima giornata di lavoro
-La prossima volta punto a trovare un modo per risolvere ciò che ho cercato di trovare tra le 14:30 e le 15:30 (vedi tabella oraria qui sopra). Vedrò anche di creare una procedura che elimini i dati dei quali non abbiamo più bisogno.
+Jonathan / Riccardo --> Ricordarsi di fare piccolo controllo se admin che la query non funziona
 
 
 Jeremy --> Finire pagina PHP
