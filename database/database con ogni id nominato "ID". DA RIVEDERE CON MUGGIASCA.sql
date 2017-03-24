@@ -4,7 +4,7 @@ use surveystation;
 
 create table utenti(
   `ID` int(11) AUTO_INCREMENT not null,
-  `Email` varchar(60) NOT NULL,
+  `Email` varchar(60) NOT NULL unique,
   `Password` varchar(60) NOT NULL,
   `Amministratore` tinyint(1) NOT NULL,
   `Email_notification`tinyint(1) NOT NULL default 0,
