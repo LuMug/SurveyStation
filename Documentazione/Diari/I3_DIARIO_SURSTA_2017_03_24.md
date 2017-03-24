@@ -35,11 +35,11 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 10.30  |Ho unito il codice che riceve i dati dell'accelerometro e quello che invia i dati in un database
-|10.30 - 12.20 |Ho cercato una soluzione agli errori che sono stati generati dall'unione dei due codici
-|13.15 - 14.00|Continuato con il tentativo di correggere gli errori|
-|14.00 - 15.20|Pensato ad una soluzione per la creazione del contenitore del sismografo|   
-|15.20 - 15.45|Diario|  
+|8:20 - 10.30  |Risolto il problema dell'invio di dati da arduino al server mysql
+|10.30 - 12.20|Progettato la struttura del sismografo|
+|13.15 - 14.00|Ripulito il codice per inviare i dati dalle cose che non servivano|
+|14.00 - 15.20|cercato di risolvere il problema dei permessi del server|   
+|15.20 - 15.45|Diario| 
 
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
