@@ -41,8 +41,21 @@
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 15:45   |Grafico live multilinea|
-|x - x   |Vari fix (login, configurabilità di qualcosa)|
+|08:20 - 08:23 | Mi sono recato con tranquillità in classe, tolta la giacca mi sono avvicinato alla mia postazione|
+|08:23 - 08:30 | Ho iniziato a preparare la mia postazione ed il cablaggio necessario per poter lavorare oggi|
+|08:30 - 08:45 | Dopo aver acceso il mio computer (di marca ASUS), ho avviato i programmi necessari per il lavoro che a breve illustrerò|
+|08:45 - 09:50 | Finalmente ho iniziato a produrre qualcosa, dopo vari problemi sono riuscito, insieme al mio collega di lavoro fassora, a completare il grafico live|
+|09:50 - 10:05| Ho fatto colazione con una brioches e un micao|
+|10:05 - 11:35| Abbiamo organizzato la gita di 4° scegliendo prima la meta di destinazione e poi i docenti, scegliando Muggiasca e Mussi |
+|11:35 - 11:37 | Ho ordinato le pizze |
+|11:37 - 12:20 | Ho creato la pagine di impostazioni gestita dall'amministratore, ho avuto dei problemi di collegamento con il database ma niente di impossibile visto che dopo diversi tentativi siamo riusciti a far funzionare anche questa pagina |
+|12:20 - 13:15 | Ho mangiato la pizza mascarpone e salsiccia precedentemente ordinata, buona la consiglio. |
+|13:15 - 14:45 | Iniziato con la stesura della pagina di profilo dell'utente |
+|14:45 - 15:00 | Pausa, ... |
+|15:00 - 15:29 | Fix della registrazione|
+|15:29 - 15:30 | Ho pensato a cosa scrivere nel diario |
+|15:30 - 15:40 | Ho scritto il diario
+|15:40 - 15:45 | Ho messo via gli strumenti del mestiere e riposto i cavi nell'apposito spazio |
 
 
 ##  Problemi riscontrati e soluzioni adottate
