@@ -1,0 +1,40 @@
+.displayNo{
+  display:none;
+}
+.dropdown-form-login{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  width: 300px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+}
+.shake{
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+/* Scroll bar*/
+::-webkit-scrollbar{
+width:10px;
+background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+background-color:#E0E0E0;
+}
+::-webkit-scrollbar-thumb:hover{
+background-color:#BDBDBD;
+}
+::-webkit-scrollbar-thumb:active{
+background-color:#9E9E9E;
+}
+#flot2{
+  height:70vh;
+}
+
+@media (max-width: 560px){
+  #main-wrapper{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
