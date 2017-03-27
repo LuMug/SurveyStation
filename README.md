@@ -1,8 +1,8 @@
-#Progetto SurveyStation - SAMTrevano
+# Progetto SurveyStation - SAMTrevano
 
 - Luca Muggiasca (docente responsabile)
 
-##Informazioni
+## Informazioni
 Iniziato il: 27.01.2017
 
 Data di consegna: 12.05.2017
@@ -13,21 +13,18 @@ Data di consegna: 12.05.2017
 
 - [GitHub Repository](https://github.com/LuMug/SurveyStation)
   
-##Documentazione
+## Documentazione
 - [Documentazione](Documentazione/0_Documentazione.md)
 
-###Diari
+### Diari
 - [Diari](Documentazione/Diari/)
 
 
 
 
 
-##Importante
+## Importante
 - [GitHub CheatSheet](Guide/github-cheatsheet.pdf)
 - [MarkDown CheatSheet](Guide/markdownCheatSheet.md)
 - [Impostare ambiente di lavoro](Guide/ImpostareAmbienteLavoro.md)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/LuMug/isete/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
