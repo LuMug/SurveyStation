@@ -15,8 +15,7 @@
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 12:20   |Grafico live con dati reali, x y z|
-|12:20 - 15:45   |Configurazioni dell'amministratore + fix registrazione|
+|8:20 - 15:45   |Server su raspberry|
 
 
 ##### Jacopo Greppi
@@ -58,6 +57,8 @@
 
 
 ##  Problemi riscontrati e soluzioni adottate
+Server raspberry: ricordarsi di cambiare accesso proxy apt.conf, ricordarsi di fare purge su wolfram engine e non fare upgrade.
+
 Oggi non si sono verificati particolari problemi. È stata alquanto tosta la stesura del codice del trigger e della procedura ad esso collegata. Dopo 2 ore di lavoro il trigger svolgeva ciò che doveva fare.
 
 Jacopo --> Durante la parte di "ristrutturazione" del database mi sono imbattuto in un problema che ha richiesto non poco tempo per essere risolto. Una volta che provavo ad aggiungere la foreign key nella tabella "vibrazione_FIX", workbench non me lo permetteva. Non veniva stampato nemmeno un messaggio d'errore che mi potesse in qualche modo aiutare nella ricerca di una possibile soluzione. Ho risolto modificando il campo della primary key. Inoltre dopo non mi era possibile inserire nella tabella una foreign key. Come prima, workbench non mi permetteva di eseguire questa azione. Dopo aver cercato in internet, chiesto a Narciso e a Mussi, assieme a Fassora sono riuscito a trovare il problema. Praticamente in alcune tabelle è stato in precedenza inserito "ENGINE = MEMORY" per renderle temporanee. A quanto pare tutte dovevano essere temporanee per permettere a workbench di inserire la chiave esterna. Ovviamente ciò andrà rivisto con il docente perché non è propriamente corretta come struttura d'implementazione.
@@ -67,7 +68,6 @@ Jacopo --> Durante la parte di "ristrutturazione" del database mi sono imbattuto
 Jeremy --> Pagina PHP: fatta
 
 ## Programma di massima per la prossima giornata di lavoro
-Jonathan / Riccardo --> Ricordarsi di fare piccolo controllo se admin che la query non funziona
 Jacopo --> Settimana prossima punto a trovare una soluzione a ciò che non ho potuto fare oggi (la conversione), la creazione di una procedura che permetta di cancellare i dati non pu necessari e di rivedere i passaggi fatti oggi insieme al docente per fare il punto della situazione e per rivedere il codice. 
 
 
