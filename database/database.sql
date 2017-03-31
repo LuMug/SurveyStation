@@ -1,4 +1,4 @@
-#drop database if exists surveyStation;
+drop database if exists surveyStation;
 create database surveystation;
 use surveystation;
 
@@ -18,15 +18,15 @@ create table configurazione(
   PRIMARY KEY (`ID`)
 );
 
-select * from configurazione;
+
 insert into configurazione(Parametro,Valore) values('tempoPrimaPiccoDati',15);
-set @a = (select valore from configurazione where Parametro = 'tempoPrimaPiccoDati');
+
 
 insert into configurazione(Parametro,Valore) values('piccoInUltimoLassoTemporale',30);
-set @b = (select valore from configurazione where Parametro = 'piccoInUltimoLassoTemporale');
+
 
 insert into configurazione(Parametro,Valore) values('CambioNumeroTerremoto',1);
-set @c = (select valore from configurazione where Parametro = 'CambioNumeroTerremoto');
+
 
 
 #create table vibrazione_MEM(
@@ -67,21 +67,6 @@ create table sismografo  (
 
 #drop table shake;
 
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (1, 1, 1);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (1, 1, 2);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (1, 2, 1);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (1, 2, 2);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (2, 2, 2);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (4, 79, 48);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (62, 62, 32);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (79, 96, 2);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (10, 61, 84);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (16, 42, 92);
-insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (59, 100, 6);
-
-
-#select * from shake;
-
 
 delimiter //
 CREATE PROCEDURE storePreviousValues(IN idSism INT) #procedura per immagazzinare tutti i dati precedenti al valore che dà inizio al terremoto
@@ -106,7 +91,7 @@ BEGIN #inizio a scrivere il codice della procedura
 	CLOSE cur; 
 END #finisco di scrivere il codice della procedura
 //
-delimiter;
+delimiter ;
 
 #drop procedure storePreviousValues;
 #drop trigger if exists InsertImportantDataFromSismografoToShake;
@@ -140,4 +125,5 @@ BEGIN
 	END IF;
 END;
 
-// delimiter ;
+// 
+delimiter ;
