@@ -6,8 +6,10 @@
 ##### Jeremy Jornod
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8.20 - 9.20: | Abbiamo sistemato la scala dei valori che non andava settimana scorsa. Praticamente i valori erano dei float e noi li mandavamo al database come double. Ora funziona. Abbiamo cambiao metodi.|
-|9.20 - 15.45: | Richiamare una pagina PHP con Arduino: Database, pagine PHP, codice Arduino. C'è un problema a livello di server. Devo capire come cambiare i permessi. |
+|8.20 - 8.45: | Riunione del team.|
+|8.45 - 9.45: | Raspberry. |
+|10.00 - 12.20: | Pagina PHP di base finita. |
+|12.20 - 15.45: | Documentazione. |
 
 
 ##### Jonathan Fassora
@@ -62,10 +64,10 @@ Jacopo --> Durante la parte di "ristrutturazione" del database mi sono imbattuto
 
 
 ##  Punto della situazione rispetto alla pianificazione
-Jeremy --> Finire collegamento Accelerometro - Arduino - Database: fatto
+Jeremy --> Pagina PHP: fatta
 
 ## Programma di massima per la prossima giornata di lavoro
 Jonathan / Riccardo --> Ricordarsi di fare piccolo controllo se admin che la query non funziona
 Jacopo --> Settimana prossima punto a trovare una soluzione a ciò che non ho potuto fare oggi (la conversione), la creazione di una procedura che permetta di cancellare i dati non pu necessari e di rivedere i passaggi fatti oggi insieme al docente per fare il punto della situazione e per rivedere il codice. 
 
-Jeremy --> Finire pagina PHP
+
