@@ -1,4 +1,4 @@
-drop database if exists surveyStation;
+#drop database if exists surveyStation;
 create database surveystation;
 use surveystation;
 
@@ -18,22 +18,22 @@ create table configurazione(
   PRIMARY KEY (`ID`)
 );
 
-create table vibrazione_MEM(
-  `ID` int(11) AUTO_INCREMENT not null,
-  `Data` datetime NOT NULL default now(),
-  `Val_Vibrazione_MEM` double NOT NULL,
-  PRIMARY KEY (`ID`)
-)ENGINE = MEMORY;
+#create table vibrazione_MEM(
+#  `ID` int(11) AUTO_INCREMENT not null,
+#  `Data` datetime NOT NULL default now(),
+ # `Val_Vibrazione_MEM` double NOT NULL,
+ # PRIMARY KEY (`ID`)
+#)ENGINE = MEMORY;
 
-create table vibrazione_FIX(
-  `ID` int(11) not null,
-  `ID_Vibrazione_MEM` int(11) not null,
-  `Data` datetime NOT NULL default now(),
-  `Val_Vibrazione_FIX` double NOT NULL,
-  PRIMARY KEY AUTO_INCREMENT (`ID`)
-)ENGINE = MEMORY;
+#create table vibrazione_FIX(
+#  `ID` int(11) not null,
+#  `ID_Vibrazione_MEM` int(11) not null,
+#  `Data` datetime NOT NULL default now(),
+#  `Val_Vibrazione_FIX` double NOT NULL,
+#  PRIMARY KEY AUTO_INCREMENT (`ID`)
+#)ENGINE = MEMORY;
 
-alter table vibrazione_FIX add foreign key (ID_Vibrazione_MEM) REFERENCES vibrazione_MEM (ID) ON DELETE CASCADE;
+#alter table vibrazione_FIX add foreign key (ID_Vibrazione_MEM) REFERENCES vibrazione_MEM (ID) ON DELETE CASCADE;
 
 create table shake(
   `ID_Sismografo` int(11) not null,
@@ -43,7 +43,7 @@ create table shake(
   `Valore_Y` double NOT NULL,
   `Valore_Z` double NOT NULL,
   PRIMARY KEY (`ID`) 
-)ENGINE=MEMORY;
+);
 
 create table sismografo  (
   `ID` int(11) AUTO_INCREMENT not null,
@@ -55,8 +55,6 @@ create table sismografo  (
 )ENGINE=MEMORY;
 
 #drop table shake;
-alter table shake add foreign key (ID_Sismografo) REFERENCES sismografo (ID) ON DELETE CASCADE;
-
 
 insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (1, 1, 1);
 insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (1, 1, 2);
@@ -71,7 +69,7 @@ insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (16, 42, 92);
 insert into sismografo (Valore_X, Valore_Y, Valore_Z) values (59, 100, 6);
 
 
-select * from shake;
+#select * from shake;
 
 
 delimiter //
@@ -99,8 +97,8 @@ END #finisco di scrivere il codice della procedura
 //
 delimiter;
 
-
-drop trigger if exists InsertImportantDataFromSismografoToShake;
+#drop procedure storePreviousValues;
+#drop trigger if exists InsertImportantDataFromSismografoToShake;
 
 delimiter // 
 
