@@ -21,11 +21,15 @@
 ##### Jacopo Greppi
 |Orario        |Lavoro svolto                                     |
 |--------------|--------------------------------------------------|
-|8:20 - 10:40  |Ho cercato una soluzione per poter convertire il tipo di dato 'varchar()' in un 'double' in sql. Lo scopo di tale operazione è quello di poter utilizzare un dato presente in una determinata tabella (configurazione), in un'ulteriore tabella come se fosse una costante che, dove serve, viene usata. Dato che nella tabella configurazione i dati potrebbero essere varchar, char, int, double, ... Ho ritenuto più idoneo usare un varchar poiché contavo sull'eventuale conversione del dato. In un'altra tabella (shake) necessito del dato di configurazione, ma come deve essere di tipo double. Quindi ho cercato un metodo di conversione.|
-|10:40 - 14:00 |Su richiesta di un compagno di lavoro, ho dovuto ristrutturare il database in modo tale che ogni id delle tabelle si chiamasse "ID". Di conseguenza ho dovuto anche modificare leggermente la struttura del trigger e della procedura creati settimana scorsa.|
-|14:00 - 14:45 | Ho eseguito delle ulteriori piccole modifiche di una tabella e dei suoi campi, dopo averne discusso assieme ai miei compagni.|
-|15:00 - 15:30 | Ho cercato di trovare una soluzione a ciò che avevo iniziato questa mattina (la conversione di un varchar in double), senza risultati|
-|15:30 - 15:45 |Gli ultimi minuti sono stati dedicati alla stesura del diario della giornata odierna|
+|8:20 - 8:45   |Briefing con tutto il team e il docente per fare il punto della situazione e per decidere le mansioni odierne.|
+|8:45 - 8:55   |Ho rivisto assieme al docente le modifiche apportate la settimana scorsa al database. Ho semplicemente dovuto commentare 2 tabelle che al momento non servono dato che non utilizziamo quel sensore. In seguito ho cancellato la parola chiave che fa diventare una tabella temporanea da una tabella che non necessitava questa keyword e ho cancellato il comando per aggiungere le foreign key alla tabella perché in quanto di memoria non le può avere.|
+|8:55 - 10:50  |Sono riuscito a parametrizzare il trigger e la procedura. Alcuni dati possono variare a seconda di cosa si voglia misurare e quindi questi ultimi sono stati inseriti nella tabella configurazione. Sono riuscito a creare delle sorti di variabili globali che mi hanno permesso di selezionare il contenuto dei valori citati e di utilizzarli nel trigger e nella procedura. Se si volesse modificare una dei valori basta andare nella tabella configurazione e il resto verrà fatto automaticamente poiché vengono usate delle variabili.|
+|10:50 - 10:55 |Ho riadattato lo schema ER alle modifiche apportate precedentemente|
+|10:55 - 12:20 |Ho iniziato ad abbozzare la documentazione riguardante la parte che mi concerne (il database) e ho iniziato a pensare e a creare una procedura che permetta di eliminare i dati inutili dalla tabella sismografo.|
+|13:15 - 14:25 |Creazione della procedura che permette di cancellare i dati vecchi in modo tale da non sovraccaricare la tabella del database|
+|14:25 - 15:20 |Ho creato un evento in modo tale da permettere alla procedura di essere eseguita in automatico ogni minuto. Così facendo non c'è bisogno di chiamarla autonomamente ogni minuto.|
+|15:20 - 15:30 |Ho eseguito qualche test per assicurarmi che la procedura e l'evento funzionassero nella maniera corretta.|
+|15:30 - 15:45 |Gli ultimi minuti della lezione sono stati dedicati alla stesura del diario della giornata odierna|
 
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
@@ -61,13 +65,14 @@ Server raspberry: ricordarsi di cambiare accesso proxy apt.conf, ricordarsi di f
 
 Oggi non si sono verificati particolari problemi. È stata alquanto tosta la stesura del codice del trigger e della procedura ad esso collegata. Dopo 2 ore di lavoro il trigger svolgeva ciò che doveva fare.
 
-Jacopo --> Durante la parte di "ristrutturazione" del database mi sono imbattuto in un problema che ha richiesto non poco tempo per essere risolto. Una volta che provavo ad aggiungere la foreign key nella tabella "vibrazione_FIX", workbench non me lo permetteva. Non veniva stampato nemmeno un messaggio d'errore che mi potesse in qualche modo aiutare nella ricerca di una possibile soluzione. Ho risolto modificando il campo della primary key. Inoltre dopo non mi era possibile inserire nella tabella una foreign key. Come prima, workbench non mi permetteva di eseguire questa azione. Dopo aver cercato in internet, chiesto a Narciso e a Mussi, assieme a Fassora sono riuscito a trovare il problema. Praticamente in alcune tabelle è stato in precedenza inserito "ENGINE = MEMORY" per renderle temporanee. A quanto pare tutte dovevano essere temporanee per permettere a workbench di inserire la chiave esterna. Ovviamente ciò andrà rivisto con il docente perché non è propriamente corretta come struttura d'implementazione.
+Jacopo --> Oggi non ho riscontrato nessuna particolare difficoltà/problema.
+
 
 
 ##  Punto della situazione rispetto alla pianificazione
 Jeremy --> Pagina PHP: fatta
 
 ## Programma di massima per la prossima giornata di lavoro
-Jacopo --> Settimana prossima punto a trovare una soluzione a ciò che non ho potuto fare oggi (la conversione), la creazione di una procedura che permetta di cancellare i dati non pu necessari e di rivedere i passaggi fatti oggi insieme al docente per fare il punto della situazione e per rivedere il codice. 
+Jacopo --> La volta prossima vorrei dedicarmi alla documentazione poiché è una parte essenziale del progetto.
 
 
