@@ -31,10 +31,10 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 10.30  |Risolto il problema dell'invio di dati da arduino al server mysql
-|10.30 - 12.20|Progettato la struttura del sismografo|
-|13.15 - 14.00|Ripulito il codice per inviare i dati dalle cose che non servivano|
-|14.00 - 15.20|cercato di risolvere il problema dei permessi del server|   
+|8:20 - 12.00  |Progettazione della scatola per contenere il sensore appeso ad arduino e rasperry
+|12.00 - 13.30|Saltado il sensore a dei cavi che pensavo che erano meno rigidi|
+|13.30 - 14.45|Pensato ad una soluzione per diminuire la durezza dei cavi|
+|15.00 - 15.20|Cercato una scatola per sviluppare il contenitore|   
 |15.20 - 15.45|Diario| 
 
 ##### Riccardo di Summa
