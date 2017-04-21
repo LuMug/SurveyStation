@@ -1,7 +1,3 @@
-Prova video:
-https://ufile.io/b24c2
------------------------------------------------------------------------------
-
 WEBServer su Raspberry:
 
 LAMP: Raspbian PIXEL, Apache 2.2, MySQL 5.5, PHP 5.6, +phpmyadmin
