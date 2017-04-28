@@ -27,6 +27,11 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
+|08.20 -  9.40| Implementazione del sistema di notifica sulla scheda e briefing
+|10.05 - 12.20|Pianificazione della struttura|
+|13.15 - 14.15 |Costruzione struttura stazione|
+|14.15 - 15.30|schemi per documentazione| 
+|15.30 - 15.45|Diario| 
 
 
 ##### Riccardo di Summa
