@@ -1,6 +1,6 @@
-drop database if exists svProva;
-create database svProva;
-use svProva;
+drop database if exists surveyStation;
+create database surveyStation;
+use surveyStation;
 
 create table utenti(
   `Email` varchar(60) NOT NULL unique,
@@ -30,23 +30,26 @@ set @c = (select valore from configurazione where Parametro = 'CambioNumeroTerre
 insert into configurazione(Parametro,Valore) values('CancellareDatiVecchi',1);
 set @d = (select valore from configurazione where Parametro = 'CancellareDatiVecchi');
 
+insert into configurazione(Parametro,Valore) values('valoreDaCuiIniziaARegistrareDati',3);
+set @e = (select valore from configurazione where Parametro = 'valoreDaCuiIniziaARegistrareDati');
+
 
 create table shake(
   `ID_Sismografo` int(11) not null,
   `ID` int(11) not null AUTO_INCREMENT,
   `Data` datetime NOT NULL default 0,
-  `Valore_X` double NOT NULL,
-  `Valore_Y` double NOT NULL,
-  `Valore_Z` double NOT NULL,
+  `Valore_X` int NOT NULL,
+  `Valore_Y` int NOT NULL,
+  `Valore_Z` int NOT NULL,
   PRIMARY KEY (`ID`) 
 );
 
 create table sismografo  (
   `ID` int(11) AUTO_INCREMENT not null,
   `Data` datetime NOT NULL default 0,
-  `Valore_X` double NOT NULL,
-  `Valore_Y` double NOT NULL,
-  `Valore_Z` double NOT NULL,  
+  `Valore_X` int NOT NULL,
+  `Valore_Y` int NOT NULL,
+  `Valore_Z` int NOT NULL,  
   PRIMARY KEY (`ID`) 
 )ENGINE=MEMORY;
 
@@ -57,7 +60,7 @@ BEGIN #inizio a scrivere il codice della procedura
     DECLARE t datetime; #variabile che conterrà il valore di Data
     DECLARE done INT default FALSE; #variabile che serve per uscire da un loop
     #Seleziono i dati degli ultimi 15minuti nei quali non ci sia già stato registrato un picco di valore 
-    DECLARE cur CURSOR FOR SELECT Data,Valore_X,Valore_Y,Valore_Z from Sismografo WHERE data>=DATE_ADD(now(), INTERVAL - @a minute) and ((select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL - @b minute) and Valore_X > 3)=0); 
+    DECLARE cur CURSOR FOR SELECT Data,Valore_X,Valore_Y,Valore_Z from Sismografo WHERE data>=DATE_ADD(now(), INTERVAL - @a minute) and ((select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL - @b minute) and Valore_X > @e)=0); 
     DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE; #Quando arrivo alla fine dei records, esco dal ciclo
     
     OPEN cur;
@@ -78,7 +81,7 @@ delimiter ;
 delimiter // 
 
 create trigger InsertImportantDataFromSismografoToShake #Creo un trigger per poter inserire dei valori in una tabella a partire dall'individuamento di un determinato valore
-before insert ON svProva.sismografo FOR EACH ROW #Operazione che va fatta, ovviamente, prima che un dato venga inserito
+before insert ON surveyStation.sismografo FOR EACH ROW #Operazione che va fatta, ovviamente, prima che un dato venga inserito
 BEGIN 
   DECLARE sismografoId int default 0; #dichiaro una variabile che simboleggia il valore dell'id del sismografo e di defaul la metto a 0
     DECLARE lastSismografoTime datetime; #dichiaro una variabile che simboleggia l'ultimo dato letto prima del picco che dà inizio al terremoto
