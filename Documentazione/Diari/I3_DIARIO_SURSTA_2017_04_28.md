@@ -9,7 +9,10 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-
+|8.20 - 9.30: | Codice Arduino -> Raspbarry tramite USB.|
+|9.30 - 11.00: | Supporto Arduino - Accelerometro - BreadBoard.|
+|11.00 - 12.20: | Pagina PHP.|
+|12.20 - 15.45: | Doc.|
 
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
