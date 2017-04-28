@@ -231,7 +231,12 @@ Di seguito uno schema che rappresenta l'archietettura della pagina web, essa è 
 
 
 ## Implementazione
+
 ### Arduino
+
+#### Struttura
+
+La
 
 ## Test
 
