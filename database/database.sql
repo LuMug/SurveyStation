@@ -18,19 +18,20 @@ create table configurazione(
   PRIMARY KEY (`ID`)
 );
 
-insert into configurazione(Parametro,Valore) values('tempoPrimaPiccoDati',15);
+#DEVONO ESSERE SPOSTATI ALL'INTERNO DEL TRIGGER O DELLA PROCEDURA DOVE VENGONO USATI
+insert into configurazione(Parametro,Valore) values('tempoPrimaPiccoDati',15); #minuti per il quale vengono salvati i dati precedenti un picco
 set @a = (select valore from configurazione where Parametro = 'tempoPrimaPiccoDati');
 
-insert into configurazione(Parametro,Valore) values('piccoInUltimoLassoTemporale',30);
+insert into configurazione(Parametro,Valore) values('piccoInUltimoLassoTemporale',30); #minuti di verifica dall'ultimo picco per sospendere il salvataggio dati
 set @b = (select valore from configurazione where Parametro = 'piccoInUltimoLassoTemporale');
 
-insert into configurazione(Parametro,Valore) values('CambioNumeroTerremoto',1);
+insert into configurazione(Parametro,Valore) values('CambioNumeroTerremoto',1);#minuti di pausa per distinzione nuovo terremoto
 set @c = (select valore from configurazione where Parametro = 'CambioNumeroTerremoto');
 
-insert into configurazione(Parametro,Valore) values('CancellareDatiVecchi',1);
+insert into configurazione(Parametro,Valore) values('CancellareDatiVecchi',1); #minuti  dopo i quali i dati del sismografo vengono eliminati
 set @d = (select valore from configurazione where Parametro = 'CancellareDatiVecchi');
 
-insert into configurazione(Parametro,Valore) values('valoreDaCuiIniziaARegistrareDati',3);
+insert into configurazione(Parametro,Valore) values('valoreDaCuiIniziaARegistrareDati',3); #valore minimo di picco dal quale cominciare a salvare i dati
 set @e = (select valore from configurazione where Parametro = 'valoreDaCuiIniziaARegistrareDati');
 
 
@@ -60,7 +61,7 @@ BEGIN #inizio a scrivere il codice della procedura
     DECLARE t datetime; #variabile che conterrà il valore di Data
     DECLARE done INT default FALSE; #variabile che serve per uscire da un loop
     #Seleziono i dati degli ultimi 15minuti nei quali non ci sia già stato registrato un picco di valore 
-    DECLARE cur CURSOR FOR SELECT Data,Valore_X,Valore_Y,Valore_Z from Sismografo WHERE data>=DATE_ADD(now(), INTERVAL - @a minute) and ((select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL - @b minute) and Valore_X > @e)=0); 
+    DECLARE cur CURSOR FOR SELECT Data,abs(Valore_X),abs(Valore_Y),abs(Valore_Z) from Sismografo WHERE data>=DATE_ADD(now(), INTERVAL - @a minute) and ((select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL - @b minute) and (abs(Valore_X) > @e or abs(Valore_Y) > @e or abs(Valore_Z) > @e))=0); 
     DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE; #Quando arrivo alla fine dei records, esco dal ciclo
     
     OPEN cur;
@@ -96,13 +97,13 @@ BEGIN
     SET sismografoId = sismografoId +1;
     end if;
   
-  SET saveData = (select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL - @b minute) and Valore_X > 3); #Definisco se salvare i dati solamente se negli ultimi 30 minuti c'è stato un picco
-  IF (new.Valore_X > 3) then #se il valore di Valore_X è paggiore di 3 allora chiamo la procedura storePreviousValues e le passo l'id del sismografo
+  SET saveData = (select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL - @b minute) and (abs(Valore_X) > @e or abs(Valore_Y) > @e or abs(Valore_Z) > @e)); #Definisco se salvare i dati solamente se negli ultimi 30 minuti c'è stato un picco
+  IF ((abs(new.Valore_X) > @e or abs(new.Valore_Y) > @e or abs(new.Valore_Z) > @e)) then #se il valore di Valore_X è paggiore di 3 allora chiamo la procedura storePreviousValues e le passo l'id del sismografo
     CALL storePreviousValues(sismografoId);
     END IF;
   
   #Inserisco i dati nella tavella shake solamente se il dato è un picco, oppure se è meno vecchio di un minuto dall'ultimo dato registrato, oppure, se saveData>0 (spiegato sopra)
-  IF (new.Valore_X > 3) OR ((lastSismografoTime <= DATE_ADD(now(),INTERVAL -@c MINUTE)) OR (saveData > 0)) THEN
+  IF ((abs(new.Valore_X) > @e or abs(new.Valore_Y) > @e or abs(new.Valore_Z) > @e)) OR ((lastSismografoTime <= DATE_ADD(now(),INTERVAL -@c MINUTE)) OR (saveData > 0)) THEN
         insert into shake (shake.ID,Valore_X,Valore_Y,Valore_Z) values(sismografoId,new.Valore_X,new.Valore_Y,new.Valore_Z); 
   END IF;
 END;
@@ -124,7 +125,7 @@ SET GLOBAL event_scheduler = 1;
 SET @@global.event_scheduler = 1;
 
 create event runProcedureOldData
-  ON SCHEDULE EVERY 1 minute
+  ON SCHEDULE EVERY @d minute
     do call oldData();
 
 
