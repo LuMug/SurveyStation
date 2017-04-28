@@ -1,6 +1,6 @@
-drop database if exists surveyStation;
-create database surveyStation;
-use surveyStation;
+drop database if exists surveystation;
+create database surveystation;
+use surveystation;
 
 create table utenti(
   `Email` varchar(60) NOT NULL unique,
