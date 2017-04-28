@@ -81,7 +81,7 @@ delimiter ;
 delimiter // 
 
 create trigger InsertImportantDataFromSismografoToShake #Creo un trigger per poter inserire dei valori in una tabella a partire dall'individuamento di un determinato valore
-before insert ON surveyStation.sismografo FOR EACH ROW #Operazione che va fatta, ovviamente, prima che un dato venga inserito
+before insert ON surveystation.sismografo FOR EACH ROW #Operazione che va fatta, ovviamente, prima che un dato venga inserito
 BEGIN 
   DECLARE sismografoId int default 0; #dichiaro una variabile che simboleggia il valore dell'id del sismografo e di defaul la metto a 0
     DECLARE lastSismografoTime datetime; #dichiaro una variabile che simboleggia l'ultimo dato letto prima del picco che dà inizio al terremoto
