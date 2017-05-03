@@ -28,13 +28,13 @@ insert into configurazione(Parametro,Valore) values('valoreDaCuiIniziaARegistrar
 
 
 create table shake(
-  `ID_Sismografo` int(11) not null,
-  `ID` int(11) not null AUTO_INCREMENT,
+  `ID_Sismografo` int(11) not null AUTO_INCREMENT,
+  `ID` int(11) not null,
   `Data` datetime NOT NULL default 0,
   `Valore_X` int NOT NULL,
   `Valore_Y` int NOT NULL,
   `Valore_Z` int NOT NULL,
-  PRIMARY KEY (`ID`) 
+  PRIMARY KEY (`ID_Sismografo`) 
 );
 
 create table sismografo  (
@@ -47,13 +47,14 @@ create table sismografo  (
 )ENGINE=MEMORY;
 
 delimiter //
-CREATE PROCEDURE storePreviousValues(IN idSism INT, IN a int, in b int, in e int) #procedura per immagazzinare tutti i dati precedenti al valore che dà inizio al terremoto
+CREATE PROCEDURE storePreviousValues(IN shakeId INT, IN a int, in b int, in e int) #procedura per immagazzinare tutti i dati precedenti al valore che dà inizio al terremoto
 BEGIN #inizio a scrivere il codice della procedura
   DECLARE X,Y,Z double; #variabili che conterranno i valori di Valore_X, Valore_Y, Valore_Z
     DECLARE t datetime; #variabile che conterrà il valore di Data
     DECLARE done INT default FALSE; #variabile che serve per uscire da un loop
     #Seleziono i dati degli ultimi 15minuti nei quali non ci sia già stato registrato un picco di valore 
-    DECLARE cur CURSOR FOR SELECT Data,abs(Valore_X),abs(Valore_Y),abs(Valore_Z) from Sismografo WHERE data>=DATE_ADD(now(), INTERVAL -a minute) and ((select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL -b minute) and (abs(Valore_X) > e or abs(Valore_Y) > e or abs(Valore_Z) > e))=0); 
+																												# SELECT SBAGLIATO! -> Devono essere copiati i valori dei minuti precedenti al primo picco dello shake!										
+    DECLARE cur CURSOR FOR SELECT Data,abs(Valore_X),abs(Valore_Y),abs(Valore_Z) from sismografo WHERE data>=DATE_ADD(now(), INTERVAL -a minute) and (select count(*) from shake where (Data >= DATE_ADD(now(), INTERVAL -b minute)) and (abs(Valore_X) > e or abs(Valore_Y) > e or abs(Valore_Z) > e))=0; 
     DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE; #Quando arrivo alla fine dei records, esco dal ciclo
 
     OPEN cur;
@@ -63,7 +64,7 @@ BEGIN #inizio a scrivere il codice della procedura
       LEAVE read_loop; #se non ci sono più record, esco dal loop
     END IF;
    
-    insert into shake(shake.ID, Data, Valore_X, Valore_Y, Valore_Z) values(idSism, t,x,y,z); #Inserisco i valori assegnati alle variabili del ciclo, nei rispettivi record della tabella shake
+    insert into shake(ID_Sismografo, Data, Valore_X, Valore_Y, Valore_Z) values(shakeId,t,x,y,z); #Inserisco i valori assegnati alle variabili del ciclo, nei rispettivi record della tabella shake
 
     END LOOP;
   CLOSE cur; 
@@ -76,8 +77,8 @@ delimiter //
 create trigger InsertImportantDataFromSismografoToShake #Creo un trigger per poter inserire dei valori in una tabella a partire dall'individuamento di un determinato valore
 before insert ON surveystation.sismografo FOR EACH ROW #Operazione che va fatta, ovviamente, prima che un dato venga inserito
 BEGIN 
-  DECLARE sismografoId int default 0; #dichiaro una variabile che simboleggia il valore dell'id del sismografo e di defaul la metto a 0
-    DECLARE lastSismografoTime datetime; #dichiaro una variabile che simboleggia l'ultimo dato letto prima del picco che dà inizio al terremoto
+    DECLARE shakeId int default 0; #dichiaro una variabile che simboleggia il valore dell'id del sismografo e di defaul la metto a 0
+    DECLARE lastShakeTime datetime; #dichiaro una variabile che simboleggia l'ultimo dato letto prima del picco che dà inizio al terremoto
     DECLARE saveData int default 0; #dichiaro una variaible nella quale salverò i dati precedenti al terremoto
     
     DECLARE a,b,c,e int;    
@@ -89,24 +90,29 @@ BEGIN
 
     
     
-  SET sismografoId = (SELECT MAX(shake.ID) FROM shake); #il valore di sismografoId corrisponde al massimo valore del campo ID_Shake nella tabella shake
-    IF sismografoId is NULL THEN #se il campo sismografoId dovesse essere di tipo null allora lo si imposta a 0
-     SET sismografoId=0;
+	SET shakeId = (SELECT MAX(ID) FROM shake); #il valore di sismografoId corrisponde al massimo valore del campo ID_Shake nella tabella shake
+    IF shakeId is NULL THEN #se il campo sismografoId dovesse essere di tipo null allora lo si imposta a 0
+     SET shakeId=0;
     END IF;
-    SET lastSismografoTime = (SELECT MAX(Data) from shake); #il valore di lastSismografoTime corrisponde alla data più recente nella tabella shake
+    
+    SET lastShakeTime = (SELECT MAX(Data) from shake where ((abs(Valore_X) > e or abs(Valore_Y) > e or abs(Valore_Z) > e))); #il valore di lastSismografoTime corrisponde alla data più recente nella tabella shake
+	IF lastShakeTime = null then
+		SET lastShakeTime = '2000-01-01 00:00:00';
+	END IF;
    
-    if lastSismografoTime <= DATE_ADD(now(),INTERVAL -@c MINUTE) then #Se l'ultimo valore prima dell'inizio del terremoto è stato registrato più di un minuto fa, allora aumento il valore della variabile sismografoId che rappresenta il numero del terremoto
-    SET sismografoId = sismografoId +1;
+    if lastShakeTime < DATE_ADD(now(),INTERVAL -c MINUTE) then #Se l'ultimo valore prima dell'inizio del terremoto è stato registrato più di un minuto fa, allora aumento il valore della variabile sismografoId che rappresenta il numero del terremoto
+		SET shakeId = shakeId +1;
     end if;
   
-  SET saveData = (select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL - b minute) and (abs(Valore_X) > e or abs(Valore_Y) > e or abs(Valore_Z) > e)); #Definisco se salvare i dati solamente se negli ultimi 30 minuti c'è stato un picco
-  IF ((abs(new.Valore_X) > e or abs(new.Valore_Y) > e or abs(new.Valore_Z) > e)) then #se il valore di Valore_X è paggiore di 3 allora chiamo la procedura storePreviousValues e le passo l'id del sismografo
-    CALL storePreviousValues(sismografoId,a,b,e);
-    END IF;
+  SET saveData = (select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL -b minute) and (abs(Valore_X) > e or abs(Valore_Y) > e or abs(Valore_Z) > e)); #Definisco se salvare i dati solamente se negli ultimi 30 minuti c'è stato un picco
+  #il call lo facciamo solo quando viene detectato un nuovo terremoto?
+  #IF ((abs(new.Valore_X) > e or abs(new.Valore_Y) > e or abs(new.Valore_Z) > e)) then #se il valore di Valore_X è paggiore di 3 allora chiamo la procedura storePreviousValues e le passo l'id del sismografo
+  #  CALL storePreviousValues(shakeId,a,b,e);
+  #END IF;
   
   #Inserisco i dati nella tavella shake solamente se il dato è un picco, oppure se è meno vecchio di un minuto dall'ultimo dato registrato, oppure, se saveData>0 (spiegato sopra)
-  IF ((abs(new.Valore_X) > 3 or abs(new.Valore_Y) > e or abs(new.Valore_Z) > e)) OR ((lastSismografoTime <= DATE_ADD(now(),INTERVAL -c MINUTE)) OR (saveData > 0)) THEN
-        insert into shake (shake.ID,Valore_X,Valore_Y,Valore_Z) values(sismografoId,new.Valore_X,new.Valore_Y,new.Valore_Z); 
+  IF ((abs(new.Valore_X) > e or abs(new.Valore_Y) > e or abs(new.Valore_Z) > e)) OR ((lastShakeTime >= DATE_ADD(now(),INTERVAL -c MINUTE)) OR (saveData > 0)) THEN
+        insert into shake (ID,data, Valore_X,Valore_Y,Valore_Z) values(shakeId,new.data,new.Valore_X,new.Valore_Y,new.Valore_Z); 
   END IF;
 END;
 
