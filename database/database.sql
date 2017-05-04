@@ -19,11 +19,12 @@ create table configurazione(
 );
 
 #DEVONO ESSERE SPOSTATI ALL'INTERNO DEL TRIGGER O DELLA PROCEDURA DOVE VENGONO USATI
-insert into configurazione(Parametro,Valore) values('tempoPrimaPiccoDati',15); #minuti per il quale vengono salvati i dati precedenti un picco
-insert into configurazione(Parametro,Valore) values('piccoInUltimoLassoTemporale',30); #minuti di verifica dall'ultimo picco per sospendere il salvataggio dati
-insert into configurazione(Parametro,Valore) values('CambioNumeroTerremoto',10);#minuti di pausa per distinzione nuovo terremoto
-insert into configurazione(Parametro,Valore) values('CancellareDatiVecchi',500); #minuti  dopo i quali i dati del sismografo vengono eliminati
-insert into configurazione(Parametro,Valore) values('valoreDaCuiIniziaARegistrareDati',3); #valore minimo di picco dal quale cominciare a salvare i dati
+insert into configurazione(Parametro,Valore) values('tempoPrimaPiccoDati',5); #minuti per il quale vengono salvati i dati precedenti un picco
+insert into configurazione(Parametro,Valore) values('piccoInUltimoLassoTemporale',5); #minuti di verifica dall'ultimo picco per sospendere il salvataggio dati  -----> NON È LA STESSA COSA CHE QUELLO SOTTO!?
+insert into configurazione(Parametro,Valore) values('CambioNumeroTerremoto',5);#minuti di pausa per distinzione nuovo terremoto
+insert into configurazione(Parametro,Valore) values('CancellareDatiVecchi',60); #minuti  dopo i quali i dati del sismografo vengono eliminati
+insert into configurazione(Parametro,Valore) values('valoreDaCuiIniziaARegistrareDati',1100); #valore minimo di picco dal quale cominciare a salvare i dati
+	#-----> RICORDARSI DO TRATTARE Z in qualche modo!
 
 
 
@@ -44,7 +45,7 @@ create table sismografo  (
   `Valore_Y` int NOT NULL,
   `Valore_Z` int NOT NULL,  
   PRIMARY KEY (`ID`) 
-)ENGINE=MEMORY;
+); #--> Ho tolto Engine MEMORY perchè crea lentezza nella cancellazione dei dati
 
 delimiter //
 CREATE PROCEDURE storePreviousValues(IN shakeId INT, IN a int, in b int, in e int) #procedura per immagazzinare tutti i dati precedenti al valore che dà inizio al terremoto
@@ -126,15 +127,16 @@ begin
   
   set d = (select valore from configurazione where Parametro = 'CancellareDatiVecchi');
 
-  delete from sismografo where data < now() - INTERVAL d minute;
+  delete from sismografo where data < (now() - INTERVAL d minute);
 end;
-// delimiter ;
+// 
+delimiter ;
 
 
 SET GLOBAL event_scheduler = ON;
-SET @@global.event_scheduler = ON;
-SET GLOBAL event_scheduler = 1;
-SET @@global.event_scheduler = 1;
+#SET @@global.event_scheduler = ON;   UNO dovrebbe essere sufficiente!
+#SET GLOBAL event_scheduler = 1;
+#SET @@global.event_scheduler = 1;
 
 create event runProcedureOldData
   ON SCHEDULE EVERY 1 hour
