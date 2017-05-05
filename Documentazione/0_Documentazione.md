@@ -236,7 +236,14 @@ Di seguito uno schema che rappresenta l'archietettura della pagina web, essa è 
 
 #### Struttura
 
-La
+#### Codice
+
+Il codice di Arduino importa tre librerie esterne:
+- Ethernet: include tutte le funzioni per eseguire le connessioni e le richieste.
+- SPI: serve da supporto alla libreria Ethernet.
+- SFE_MMA8452Q: questa libreria implementa la completa gestione dell'accelerometro.
+
+![schema sito](Immagini_doc/toPagePHP_UML.jpg)
 
 ## Test
 
