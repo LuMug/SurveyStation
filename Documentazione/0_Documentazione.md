@@ -139,9 +139,8 @@
 |**002**     | L'admin ha accesso a una dashboard di gestione |
 |**003**     | La registrazione richiede un indirizzo e-mail (univoco nel sistema) e una password |
 |**004**     | Gli utenti devono avere la possibilità di cambiare la password |
-|**005**     | L'admin può aggiungere nuovi moduli |
-|**006**     | L'admin può gestire le configurazioni (vedi REQ-006) |
-|**007**     | L'admin può gestire gli utenti |
+|**005**     | L'admin può gestire le configurazioni (vedi REQ-006) |
+|**006**     | L'admin può gestire gli utenti |
 
 
 |ID  |REQ-006                                         |
@@ -152,8 +151,7 @@
 |**Note**    ||
 |            |**Sotto requisiti** |
 |**001**     | Per ogni modulo devono essere configurabili le soglie di valori interessanti |
-|**002**     | Per ogni modulo devono essere configurabili le soglie di valori d'allarme |
-|**003**     | Per ogni modulo deve essere configurabile il tempo della durata di una misurazione (p.es. un terremoto che non ha picchi per X minuti è da considerarsi concluso) |
+|**002**     | Per ogni modulo deve essere configurabile il tempo della durata di una misurazione (p.es. un terremoto che non ha picchi per X minuti è da considerarsi concluso) |
 |**003**     | Dovranno poi essere configurabili altri parametri |
 
 
@@ -177,8 +175,7 @@
 |**Note**    ||
 |            |**Sotto requisiti** |
 |**001**     | I dati raccolti per ogni modulo devono essere mostrati sulla pagina web tramite un grafico con il tempo in ascissa. |
-|**002**     | L'ordinata del grafico deve essere regolabile da parte dell'utente |
-|**003**     | I dati salvati devono essere consultabili |
+|**002**     | I dati salvati devono essere consultabili |
 
 
 |ID  |REQ-009                                         |
@@ -188,9 +185,8 @@
 |**Versione**|1.0                   |
 |**Note**    ||
 |            |**Sotto requisiti** |
-|**001**     | Ogni modulo rappresenta un 'pacchetto' di file dedito alla misura di una certa condizione (sismografia, temperatura, pressione, ...) |
-|**002**     | I moduli hanno delle configurazioni che possono essere definite dall'admin (vedi REQ-006) |
-|**003**     | Ogni modulo dispone della sua sezione sul sito, con tabella nel DB per il salvataggio dei valori e grafico per la visualizzazione |
+|**001**     | I moduli hanno delle configurazioni che possono essere definite dall'admin (vedi REQ-006) |
+|**002**     | Ogni modulo dispone della sua sezione sul sito, con tabella nel DB per il salvataggio dei valori e grafico per la visualizzazione |
 
 
 ### Use case
