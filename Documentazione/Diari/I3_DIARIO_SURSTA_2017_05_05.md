@@ -30,6 +30,11 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
+|08.20 -  9.50| Dissaldato e saldato la nuova struttura per l'accelerometro
+|10.05 - 12.20|Assemblato la nuova struttura e rimosso le parti inutili|
+|13.15 - 14.30 |Progettato lo schema per veroboard|
+|14.30 - 15.35|Saldato i componenti su veroboard| 
+|15.35 - 15.45|Diario| 
 
 
 ##### Riccardo di Summa
