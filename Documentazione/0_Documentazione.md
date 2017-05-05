@@ -241,6 +241,8 @@ Il codice di Arduino importa tre librerie esterne:
 
 ![schema sito](Immagini_doc/toPagePHP_UML.jpg)
 
+Lo scopo di Arduino e del suo codice è quello di prelevare i dati rilevati dall'accelerometro, contattare il server e la pagina PHP di riferimento, creare l'URL con i relativi valori e spedirli. Oltre a ciò si deve occupare di controllare i dati e, nel quale ci fosse un'anomalia o un terremoto, illuminare l'apposito led.
+
 
 
 ## Implementazione
