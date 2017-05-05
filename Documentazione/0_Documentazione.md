@@ -210,6 +210,7 @@ Di seguito uno schema che rappresenta l'archietettura della pagina web, essa è 
 
 ![schema sito](Immagini_doc/SchemaSito.png)
 <br>
+<br>
 ### Design dei dati e database
 
 La parte di design dei dati ha la funzione di mostrare che tipi di dati sono stati assegnati ai vari attributi delle tabelle presenti nel database. L'immagine che segue mostra il design dei dati del database "surveyStation", usato per questo progetto.
