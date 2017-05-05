@@ -131,17 +131,24 @@ end;
 delimiter ;
 
 
-SET GLOBAL event_scheduler = ON;
-SET @@global.event_scheduler = ON;   #UNO dovrebbe essere sufficiente!
-SET GLOBAL event_scheduler = 1;
-SET @@global.event_scheduler = 1;
+DELIMITER //
 
 CREATE EVENT runProcedureOldData
 	ON SCHEDULE EVERY 1 hour
-	DO
+    ON completion preserve
+	DO begin
     CALL oldData();
-    
+    end;
+//
+DELIMITER ;
+
+
+DELIMITER //
 CREATE EVENT runProcedureStorePreviousData
 	ON SCHEDULE EVERY 1 minute
-	DO
+    ON completion preserve
+	DO begin
     CALL storePreviousData();
+	end;
+//
+DELIMITER ;
