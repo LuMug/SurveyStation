@@ -9,7 +9,9 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-
+|8.20 - 9.30: | Riprogettata e cambiata la struttura di Arduino.|
+|9.30 - 10.30: | Cambiato codice e studiato accelerometro.|
+|10.30 - 16.15: | Doc.|
 
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
