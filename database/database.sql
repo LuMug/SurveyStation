@@ -29,8 +29,8 @@ insert into configurazione(Parametro,Valore) values('valoreDaCuiIniziaARegistrar
 
 
 create table shake(
-  `ID_Sismografo` int(11) not null,
   `ID` int(11) not null AUTO_INCREMENT,
+  `ID_Sismografo` int(11) not null,
   `Data` datetime NOT NULL default 0,
   `Valore_X` int NOT NULL,
   `Valore_Y` int NOT NULL,
