@@ -228,10 +228,6 @@ Di seguito uno schema che rappresenta l'archietettura della pagina web, essa è 
 
 ### Design procedurale
 
-
-
-## Implementazione
-
 ### Arduino
 
 #### Struttura
@@ -244,6 +240,16 @@ Il codice di Arduino importa tre librerie esterne:
 - SFE_MMA8452Q: questa libreria implementa la completa gestione dell'accelerometro.
 
 ![schema sito](Immagini_doc/toPagePHP_UML.jpg)
+
+
+
+## Implementazione
+
+### Arduino
+
+#### Struttura
+
+#### Codice
 
 ## Test
 
