@@ -232,6 +232,11 @@ Di seguito uno schema che rappresenta l'archietettura della pagina web, essa è 
 
 #### Struttura
 
+La struttura è stata progettata per contenere Raspberry, Arduino, Veroboard (con su saldati accelerometro e led) e Breadboard per eventuali lavori o aggiunte future.
+
+![schema sito](Immagini_doc/struttura.jpg)
+
+
 #### Codice
 
 Il codice di Arduino importa tre librerie esterne:
