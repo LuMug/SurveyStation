@@ -25,6 +25,8 @@
   - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 
   - [Design dei dati e database](#design-dei-dati-e-database)
+  
+  - [Arduino](#darduino)
 
 1. [Implementazione](#implementazione)
 
@@ -262,9 +264,9 @@ La struttura è stata progettata per contenere Raspberry, Arduino, Veroboard (co
 Lo scopo di Arduino e del suo codice è quello di prelevare i dati rilevati dall'accelerometro, contattare il server e la pagina PHP di riferimento, creare l'URL con i relativi valori e spedirli. Oltre a ciò si deve occupare di controllare i dati e, nel quale ci fosse un'anomalia o un terremoto, illuminare l'apposito led.
 <br>
 Il codice di Arduino importa tre librerie esterne:
-- <b>Ethernet:<b> include tutte le funzioni per eseguire le connessioni e le richieste.
-- <b>SPI:<b> serve da supporto alla libreria Ethernet.
-- <B>SFE_MMA8452Q:<b> questa libreria implementa la completa gestione dell'accelerometro.
+- <b>Ethernet:</b> include tutte le funzioni per eseguire le connessioni e le richieste.
+- <b>SPI:</b> serve da supporto alla libreria Ethernet.
+- <b>SFE_MMA8452Q:</b> questa libreria implementa la completa gestione dell'accelerometro.
 
 ![schema sito](Immagini_doc/toPagePHP_UML.jpg)
 
