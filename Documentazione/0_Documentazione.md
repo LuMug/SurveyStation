@@ -26,7 +26,7 @@
 
   - [Design dei dati e database](#design-dei-dati-e-database)
   
-  - [Arduino](#darduino)
+  - [Arduino](#arduino)
 
 1. [Implementazione](#implementazione)
 
@@ -271,7 +271,7 @@ Il codice di Arduino importa tre librerie esterne:
 ![schema sito](Immagini_doc/toPagePHP_UML.jpg)
 
 <br>
-<b><h5>Attributi:</h5></b>
+<b><h4>Attributi:</h4></b>
 
 - <b>redPin:</b> È il pin con cui alimentare il colore rosso del led. <br>
 - <b>greePin:</b> È il pin con cui alimentare il colore verde del led. <br>
