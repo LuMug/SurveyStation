@@ -271,7 +271,7 @@ Il codice di Arduino importa tre librerie esterne:
 <br>
 <h5>Attributi:</h5>
 
-- redPin: È il pin con cui alimentare il colore rosso del led. <br>
+- <h6>redPin:</h6> È il pin con cui alimentare il colore rosso del led. <br>
 - greePin: È il pin con cui alimentare il colore verde del led. <br>
 - mac: È il MAC Address della scheda Arduino. <br>
 - serverIp: È l'indirizzo IP del server. <br>
