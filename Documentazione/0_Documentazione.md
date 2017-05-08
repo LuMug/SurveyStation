@@ -25,6 +25,8 @@
   - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 
   - [Design dei dati e database](#design-dei-dati-e-database)
+  
+  - [Arduino](#arduino)
 
 1. [Implementazione](#implementazione)
 
@@ -259,17 +261,32 @@ La struttura è stata progettata per contenere Raspberry, Arduino, Veroboard (co
 
 
 #### Codice
-
+Lo scopo di Arduino e del suo codice è quello di prelevare i dati rilevati dall'accelerometro, contattare il server e la pagina PHP di riferimento, creare l'URL con i relativi valori e spedirli. Oltre a ciò si deve occupare di controllare i dati e, nel quale ci fosse un'anomalia o un terremoto, illuminare l'apposito led.
+<br>
 Il codice di Arduino importa tre librerie esterne:
-- Ethernet: include tutte le funzioni per eseguire le connessioni e le richieste.
-- SPI: serve da supporto alla libreria Ethernet.
-- SFE_MMA8452Q: questa libreria implementa la completa gestione dell'accelerometro.
+- <b>Ethernet:</b> include tutte le funzioni per eseguire le connessioni e le richieste.
+- <b>SPI:</b> serve da supporto alla libreria Ethernet.
+- <b>SFE_MMA8452Q:</b> questa libreria implementa la completa gestione dell'accelerometro.
 
 ![schema sito](Immagini_doc/toPagePHP_UML.jpg)
 
-Lo scopo di Arduino e del suo codice è quello di prelevare i dati rilevati dall'accelerometro, contattare il server e la pagina PHP di riferimento, creare l'URL con i relativi valori e spedirli. Oltre a ciò si deve occupare di controllare i dati e, nel quale ci fosse un'anomalia o un terremoto, illuminare l'apposito led.
+<br>
+<b>Attributi:</b>
 
+- <b>redPin:</b> È il pin con cui alimentare il colore rosso del led. <br>
+- <b>greePin:</b> È il pin con cui alimentare il colore verde del led. <br>
+- <b>mac:</b> È il MAC Address della scheda Arduino. <br>
+- <b>serverIp:</b> È l'indirizzo IP del server. <br>
+- <b>arduinoIp:</b> È l'indirizzo IP di Arduino. <br>
+- <b>client:</b> È il client ethernet. Serve a contattare il server e la pagina PHP. <br>
+- <b>strURL:</b> È la stringa URL che si spedirà tramite client. All'interno di essa si formatterà un URL con la pagina da chiamare e i valori di X, Y e Z. <br>
+- <b>accel:</b> È l'istanza dell'accelerometro.
 
+<br>
+<b>Funzioni:</b>
+- <b>setup(): </b> Funzione di settaggi e istanze.<br>
+- <b>loop(): </b> Funzione di settaggi e istanze.<br>
+- <b>updateValues(): </b> Funzione di settaggi e istanze.<br>
 
 ## Implementazione
 
