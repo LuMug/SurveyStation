@@ -31,18 +31,18 @@ create table shake(
   `ID` int(11) not null,
   `ID_Sismografo` int(11) not null AUTO_INCREMENT,
   `Data` datetime NOT NULL default 0,
-  `Valore_X` int NOT NULL,
-  `Valore_Y` int NOT NULL,
-  `Valore_Z` int NOT NULL,
+  `Valore_X` float NOT NULL,
+  `Valore_Y` float NOT NULL,
+  `Valore_Z` float NOT NULL,
   PRIMARY KEY (`ID_Sismografo`,`ID`)
 );
 
 create table sismografo  (
   `ID` int(11) AUTO_INCREMENT not null,
   `Data` datetime NOT NULL default 0,
-  `Valore_X` int NOT NULL,
-  `Valore_Y` int NOT NULL,
-  `Valore_Z` int NOT NULL,  
+  `Valore_X` float NOT NULL,
+  `Valore_Y` float NOT NULL,
+  `Valore_Z` float NOT NULL,  
   PRIMARY KEY (`ID`) 
 ); #--> Ho tolto Engine MEMORY perchè crea lentezza nella cancellazione dei dati
 
