@@ -271,7 +271,7 @@ Il codice di Arduino importa tre librerie esterne:
 ![schema sito](Immagini_doc/toPagePHP_UML.jpg)
 
 <br>
-<b><h4>Attributi:</h4></b>
+<b>Attributi:</b>
 
 - <b>redPin:</b> È il pin con cui alimentare il colore rosso del led. <br>
 - <b>greePin:</b> È il pin con cui alimentare il colore verde del led. <br>
@@ -282,7 +282,11 @@ Il codice di Arduino importa tre librerie esterne:
 - <b>strURL:</b> È la stringa URL che si spedirà tramite client. All'interno di essa si formatterà un URL con la pagina da chiamare e i valori di X, Y e Z. <br>
 - <b>accel:</b> È l'istanza dell'accelerometro.
 
-
+<br>
+<b>Funzioni:</b>
+- <b>setup(): </b> Funzione di settaggi e istanze.<br>
+- <b>loop(): </b> Funzione di settaggi e istanze.<br>
+- <b>updateValues(): </b> Funzione di settaggi e istanze.<br>
 
 ## Implementazione
 
