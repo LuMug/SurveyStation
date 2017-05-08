@@ -259,7 +259,8 @@ La struttura è stata progettata per contenere Raspberry, Arduino, Veroboard (co
 
 
 #### Codice
-
+Lo scopo di Arduino e del suo codice è quello di prelevare i dati rilevati dall'accelerometro, contattare il server e la pagina PHP di riferimento, creare l'URL con i relativi valori e spedirli. Oltre a ciò si deve occupare di controllare i dati e, nel quale ci fosse un'anomalia o un terremoto, illuminare l'apposito led.
+<br>
 Il codice di Arduino importa tre librerie esterne:
 - Ethernet: include tutte le funzioni per eseguire le connessioni e le richieste.
 - SPI: serve da supporto alla libreria Ethernet.
@@ -267,7 +268,16 @@ Il codice di Arduino importa tre librerie esterne:
 
 ![schema sito](Immagini_doc/toPagePHP_UML.jpg)
 
-Lo scopo di Arduino e del suo codice è quello di prelevare i dati rilevati dall'accelerometro, contattare il server e la pagina PHP di riferimento, creare l'URL con i relativi valori e spedirli. Oltre a ciò si deve occupare di controllare i dati e, nel quale ci fosse un'anomalia o un terremoto, illuminare l'apposito led.
+<br>
+##### Attributi
+- redPin: È il pin con cui alimentare il colore rosso del led.
+- greePin: È il pin con cui alimentare il colore verde del led.
+- mac: È il MAC Address della scheda Arduino.
+- serverIp: È l'indirizzo IP del server.
+- arduinoIp: È l'indirizzo IP di Arduino.
+- client: È il client ethernet. Serve a contattare il server e la pagina PHP.
+- strURL: È la stringa URL che si spedirà tramite client. All'interno di essa si formatterà un URL con la pagina da chiamare e i valori di X, Y e Z.
+- accel: È l'istanza dell'accelerometro.
 
 
 
