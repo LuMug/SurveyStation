@@ -270,13 +270,14 @@ Il codice di Arduino importa tre librerie esterne:
 
 <br>
 <h5>Attributi:</h5>
-- redPin: È il pin con cui alimentare il colore rosso del led.
-- greePin: È il pin con cui alimentare il colore verde del led.
-- mac: È il MAC Address della scheda Arduino.
-- serverIp: È l'indirizzo IP del server.
-- arduinoIp: È l'indirizzo IP di Arduino.
-- client: È il client ethernet. Serve a contattare il server e la pagina PHP.
-- strURL: È la stringa URL che si spedirà tramite client. All'interno di essa si formatterà un URL con la pagina da chiamare e i valori di X, Y e Z.
+
+- redPin: È il pin con cui alimentare il colore rosso del led. <br>
+- greePin: È il pin con cui alimentare il colore verde del led. <br>
+- mac: È il MAC Address della scheda Arduino. <br>
+- serverIp: È l'indirizzo IP del server. <br>
+- arduinoIp: È l'indirizzo IP di Arduino. <br>
+- client: È il client ethernet. Serve a contattare il server e la pagina PHP. <br>
+- strURL: È la stringa URL che si spedirà tramite client. All'interno di essa si formatterà un URL con la pagina da chiamare e i valori di X, Y e Z. <br>
 - accel: È l'istanza dell'accelerometro.
 
 
