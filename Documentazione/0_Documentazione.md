@@ -341,3 +341,4 @@ https://dev.mysql.com/doc/refman/5.7/en/ e https://www.w3schools.com/sql/DEfaULT
   * file sql per creare il database del progetto
 
 * Diari
+* Quaderno dei compiti (qdc)
