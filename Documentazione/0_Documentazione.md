@@ -332,7 +332,7 @@ Il codice di Arduino importa tre librerie esterne:
 
 
 ### Sitografia
-https://dev.mysql.com/doc/refman/5.7/en/ e https://www.w3schools.com/sql/DEfaULT.asP --> per vedere il funzionamento e la struttura di varie funzioni, dei trigger, delle procedure e degli eventi.
+https://dev.mysql.com/doc/refman/5.7/en/ e https://www.w3schools.com/sql/DEfaULT.asP --> per vedere il funzionamento e la struttura di varie funzioni, dei trigger, delle procedure e degli eventi in mysql.
 
 ## Allegati
 * Database
