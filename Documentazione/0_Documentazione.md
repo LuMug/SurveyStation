@@ -320,6 +320,8 @@ Il codice di Arduino importa tre librerie esterne:
 
 
 ### Considerazioni personali
+* Jacopo
+  * Inizialmente quando ci è stato assegnato il progetto ero totalmente spiazzato poiché mi sembrava un lavoro talmente impegnativo e complicato che non pensavo se ce l'avessi potuta fare. Piano piano abbiamo iniziato a suddividerci il lavoro, io ero incaricato di progettare, creare e gestire il database, e quella nebbia di incertezze ha iniziato a diramarsi. L'idea del progetto l'ho trovata molto interessante poiché ci ha permesso di creare qualcosa che si può applicare per un uso reale nella vita di tutti i giorni. 
 
 
 ## Bibliografia
@@ -332,6 +334,16 @@ Il codice di Arduino importa tre librerie esterne:
 
 
 ### Sitografia
+* https://dev.mysql.com/doc/refman/5.7/en/ e https://www.w3schools.com/sql/DEfaULT.asP --> per vedere il funzionamento e la struttura di varie funzioni, dei trigger, delle procedure e degli eventi in mysql.
+<br>
 
+* http://www.formazioneinfap.it/help.php?file=markdown.html --> per consultare come formattare il testo in un determinato modo usando il linguaggio markdown.
 
 ## Allegati
+* Database
+  * Schema ER
+  * Schema del design dei dati
+  * file sql per creare il database del progetto
+
+* Diari
+* Quaderno dei compiti (qdc)
