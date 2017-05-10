@@ -336,8 +336,8 @@ https://dev.mysql.com/doc/refman/5.7/en/ e https://www.w3schools.com/sql/DEfaULT
 
 ## Allegati
 * Database
-* Schema ER
-* Schema del design dei dati
-* file sql per creare il database del progetto
+  * Schema ER
+  * Schema del design dei dati
+  * file sql per creare il database del progetto
 
 * Diari
