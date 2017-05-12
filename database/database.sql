@@ -19,9 +19,9 @@ create table configurazione(
 );
 
 #DEVONO ESSERE SPOSTATI ALL'INTERNO DEL TRIGGER O DELLA PROCEDURA DOVE VENGONO USATI
-insert into configurazione(Parametro,Valore) values('datiPrecedentiPicco',1); #minuti per il quale vengono salvati i dati precedenti un picco
-insert into configurazione(Parametro,Valore) values('nuovoTerremoto',5);#minuti di pausa per distinzione nuovo terremoto
-insert into configurazione(Parametro,Valore) values('cancellareDatiVecchi',60); #minuti  dopo i quali i dati del sismografo vengono eliminati
+insert into configurazione(Parametro,Valore) values('minutiPrecedentiPiccoDati',1); #minuti per il quale vengono salvati i dati precedenti un picco
+insert into configurazione(Parametro,Valore) values('minutiInizioNuovoTerremoto',5);#minuti di pausa per distinzione nuovo terremoto
+insert into configurazione(Parametro,Valore) values('minutiPerCancellareDati',60); #minuti  dopo i quali i dati del sismografo vengono eliminati
 insert into configurazione(Parametro,Valore) values('valorePiccoMinimo',1100); #valore minimo di picco dal quale cominciare a salvare i dati-->Trasformarlo in accelerazione minimina??
   #-----> RICORDARSI DO TRATTARE Z in qualche modo!
 
@@ -84,8 +84,8 @@ BEGIN
     DECLARE a,c int;   
     DECLARE e float;
   
-    set a = (select valore from configurazione where Parametro = 'datiPrecedentiPicco');
-    set c = (select valore from configurazione where Parametro = 'NuovoTerremoto');
+    set a = (select valore from configurazione where Parametro = 'minutiPrecedentiPiccoDati');
+    set c = (select valore from configurazione where Parametro = 'minutiInizioNuovoTerremoto');
     set e = (select valore from configurazione where Parametro = 'valorePiccoMinimo');
 
     
@@ -129,7 +129,7 @@ create procedure oldData()
 begin
   declare d int;
   
-  set d = (select valore from configurazione where Parametro = 'CancellareDatiVecchi');
+  set d = (select valore from configurazione where Parametro = 'minutiPerCancellareDati');
 
   delete from sismografo where data < (now() - INTERVAL d minute);
 end;
