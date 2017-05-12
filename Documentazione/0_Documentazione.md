@@ -551,6 +551,9 @@ Consuntivo costi:
   
  * Nicola
 	* Il progetto è stato interessante, ho imparato diverse cose nuove e messo in pratica alcune di quelle che già conoscevo. È stato interessante in quanto siamo riusciti a far comunicare un arduino con un raspberry e questo può tornare utile anche in progetti futuri.<br>Penso che il progetto di per se sia uscito bene e che magari può tornare utile in futuro, magari modificando qualche parte. 
+	
+* Jeremy
+	* Il progetto personalmente mi è piaciuto, penso sia stato utile per migliorare le mie skills in programmazione, mi sono trovato bene con il team di sviluppo e in fine dei conti penso anche che siamo riusciti a portare un buon prodotto finale, sia nella parte software che in quella hardware.<br> Questo progetto potrà magari tornare utile in futuro con qualche variazione o ampliamento.
 
 
 ## Bibliografia
