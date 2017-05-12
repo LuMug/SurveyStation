@@ -8,7 +8,7 @@
 
   - [Scopo](#scopo)
 
-1. [Analisi](#analisi)
+2. [Analisi](#analisi)
 
   - [Analisi del dominio](#analisi-del-dominio)
 
@@ -18,7 +18,7 @@
 
   - [Pianificazione](#pianificazione)
 
-1. [Progettazione](#progettazione)
+3. [Progettazione](#progettazione)
 
   - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 
@@ -26,9 +26,9 @@
   
   - [Arduino](#arduino)
 
-1. [Implementazione](#implementazione)
+4. [Implementazione](#implementazione)
 
-1. [Test](#test)
+5. [Test](#test)
 
   - [Protocollo di test](#protocollo-di-test)
 
@@ -36,17 +36,17 @@
 
   - [Mancanze/limitazioni conosciute](#mancanze/limitazioni-conosciute)
 
-1. [Consuntivo](#consuntivo)
+5. [Consuntivo](#consuntivo)
 
-1. [Conclusioni](#conclusioni)
+6. [Conclusioni](#conclusioni)
 
   - [Sviluppi futuri](#sviluppi-futuri)
 
   - [Considerazioni personali](#considerazioni-personali)
 
-1. [Sitografia](#sitografia)
+7. [Sitografia](#sitografia)
 
-1. [Allegati](#allegati)
+8. [Allegati](#allegati)
 
 
 ## Introduzione
@@ -349,7 +349,51 @@ Il lavoro che deve fare la pagina PHP è quello di recuperare X, Y e Z dall'URL 
 
 #### Struttura
 
-#### Database
+#### Codice
+<b>I tre include delle librerie:</b>
+
+![include](Immagini_doc/include.png)
+
+<b>Le istanze degli attributi principali:</b>
+
+![client](Immagini_doc/client.png)<br>
+![arduinoIp](Immagini_doc/arduinoIp.png)<br>
+![serverIp](Immagini_doc/serverIp.png)<br>
+![macArduino](Immagini_doc/macArduino.png)<br>
+![accel](Immagini_doc/accel.png)<br>
+![url](Immagini_doc/url.png)
+
+<b>Il setup:</b>
+
+Il metodo <b>*.init()*</b> serve a settare due attributi fondamentali. Il primo attributo è la scala dei valori acquisiti dal sensore. Si possono settare 3 scale differenti: SCALE_2G, SCALE_4G e SCALE_8G.
+Il secondo attributo invece si occupa di impostare la frequenza di rilevamento. La gamma dei valori è vasta e parte da ODR_1 (1.56 Hz) fino ad arrivare a ODR_800 (800 Hz).
+
+![setup](Immagini_doc/setup.png)
+
+<b>Il loop:</b>
+
+Il loop serve principalmente a richiamare *updateValues()* e a scrivere sulla seriale lo stato delle connessioni.
+
+![loop](Immagini_doc/loop.png)
+
+<b>UpdateValues:</b>
+
+Come prima cosa si conette al server. Il metodo *.connect()* accetta due parametri. Il primo parametro è l'indirizzo ip del server: il tipo deve essere <b>IPAddress</b>. Il secondo parametro è la porta tramite cui Arduino deve accedere.
+
+![uv1](Immagini_doc/uv1.png)
+
+Il secondo passo è quello di vedere se l'accelerometro è disponibile. Se così fosse, si può passare a leggere i valori rilevati dal sensore. Il metodo *.read()* serve a leggere l'accelerazione delle tre assi. Fatto ciò si può recuperare la singola accelerazione tramite: *.cx*, *.cy* e *.cz*. Si potrebbe usare anche: *.x*, *.y* e *.z* ma i valori ottenuti da questi attributi sarebbero stati assoluti. Con la seconda opzione invece i valori fanno riferimento allo zero.
+
+![uv2](Immagini_doc/uv2.png)
+
+Il terzo passo riguarda la creazione della stringa URL e la spedizione al server. I tre valori X, Y e Z vengono passati tramite l'URL e alle apposite variabili. Nel punto in cui bisogna inserire l'indirizzo IP dell'host si inserisce l'indirizzo del server. Dopo aver spedito l'URL si chiude la connessione.
+
+![uv3](Immagini_doc/uv3.png)
+
+
+#### Pagina PHP
+
+### Database
 Una volta terminata la progettazione del database bisogna implementare/mettere in pratica ciò che si è fatto in maniera teorica. Come primissimo passo ho iniziato a scrivere il codice sql delle tabelle presenti sul database dato che senza di esse non è possibile lavorare. 
 <br>
 <img src="Immagini_doc/utentiConfigurazione.PNG" />
