@@ -405,7 +405,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 Di seguito il GANTT di consuntivo.
 
 
-![gantt consuntivo](Immagini_doc/gantt_cons.PNG)
+![gantt consuntivo](Immagini_doc/gantt_cons.png)
 
 
 Consuntivo costi:
