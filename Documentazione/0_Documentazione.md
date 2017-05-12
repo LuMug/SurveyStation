@@ -502,7 +502,7 @@ Consuntivo costi:
   - Infine potrebbe essere interessante utilizzare un sistema di 'traduzione' in scale più conosciute dei dati sismologici rilevati (la scala Richter non è un'opzione in quanto non è direttamente collegata ai valori di accelerazione).
 
 ### Considerazioni personali
-* Jacopo
+* Jacopo Greppi
   * Inizialmente quando ci è stato assegnato il progetto ero totalmente spiazzato poiché mi sembrava un lavoro talmente impegnativo e complicato che non pensavo che ce l'avessi potuta fare. Piano piano abbiamo iniziato a suddividerci il lavoro, io ero incaricato di progettare, creare e gestire il database, e quella nebbia di incertezze ha iniziato a diradarsi. L'idea del progetto l'ho trovata molto interessante poiché ci ha permesso di creare qualcosa che si può applicare per un uso reale nella vita di tutti i giorni. Ovviamente ci sono state diverse difficoltà durante tutto il percorso, ma questo mi ha permesso di mettermi alla prova e di valutare le mie capacità. Ho ovviamente imparato alcune nozioni che durante i vari moduli non abbiamo trattato e ciò è molto positivo perché ho avuto l'opportunità di ampliare il mio bagaglio culturale. 
 
 
