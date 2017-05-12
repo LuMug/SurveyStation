@@ -330,6 +330,58 @@ Il lavoro che deve fare la pagina PHP è quello di recuperare X, Y e Z dall'URL 
 
 #### Codice
 
+### Sito Web
+
+#### Data.php e comunicazione con il grafico
+
+DATA.PHP
+La pagina data.php è il cuore pulsante dell'esposizione dei dati nel grafico.
+Questo file viene chiamato ripetutamente tramite ajax e fornisce i dati che vengono continuamente inseriti nel database da Arduino.
+Nella prima parte del codice ci sono dei parametri che permettono di adattare il grafico senza dover modificare le viscere del codice.
+
+<br>
+![parametri data.php](Immagini_doc/parametri.png)
+
+<br>
+
+Il numero di dati permette di adattare la visualizzazione, un numero basso avrà un grafico più rapido, un numero più alto permette invece di vedere un timespan più grande. Da notare che un numero eccessivamente elevato (>1000) penalizzerà sensibilmente le prestazioni.
+C'é poi un parametro di moltiplicazione, nel caso in cui si voglia avere un range diverso dei dati.
+Si possono poi definire delle transizioni per i 3 valori, in questo modo le linee possono essere mosse sull'asse delle ordinate a piacimento (in questa situazione bisognerebbe poi andare a modificare il minimo e il massimo sull'asse Y nel grafico).
+
+<br>
+![query data.php](Immagini_doc/query.png)
+<br>
+
+La query che viene ripetuta seleziona $nrDati di dati e in seguito li inverte, fatto questo riordina i risultati in base all'id.
+
+<br>
+!fetch data.php](Immagini_doc/fetch.png)
+<br>
+
+I dati vengono presi dal risultato della query e inseriti in 4 array diversi.
+
+<br>
+![invio data.php](Immagini_doc/infoInviate.png)
+<br>
+
+Completato il processo i 4 gruppi di dati vengono inseriti in un grosso array che viene poi mandato in ritorno in formato json.
+
+GRAFICO (flot)
+
+Il grafico è un oggetto messo a disposizione da flotchars JavaScript (http://www.flotcharts.org/) e poi adattato al nostro utilizzo.
+
+<br>
+![utilizzo dati chart](Immagini_doc/flotInfo.png)
+<br>
+
+La funzione showHint() viene chiamata ripetutamente tramite AJAX ogni tot. millisecondi (definiti in setInterval).
+
+![timeout](Immagini_doc/settimeout.png)
+<br>
+
+I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset utilizzati dal grafico. Le date verrano utilizzate come ticks (ovvero i labels sull'asse X).
+<br>
+
 ## Test
 
 ### Protocollo di test
