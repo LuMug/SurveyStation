@@ -393,6 +393,29 @@ Il terzo passo riguarda la creazione della stringa URL e la spedizione al server
 
 #### Pagina PHP
 
+<b>Valori:</b>
+
+All'inizio si controlla l'esistenza delle variabili x, y e z. Se è tutto a posto allora si procede con il salvare i valori in tre variabili all'interno di PHP.
+
+![valori](Immagini_doc/valori.PNG)
+
+<b>Connessione MySQL:</b>
+
+Si crea una variabile *$link* che contiene la connessione a MySQL. All'interno del metodo *mysql_connect* bisogna inserire l'indirizzo ip (in questo caso localhost perchè la pagina PHP si trova all'interno della root), nome dell'utente che accede al database e la sua relativa password.
+Nella riga sotto si gestisce l'errore nell'evenienza di qualche problema con la connessione.
+Successivamente ci si connette al database *surveyStation*.
+
+![connessione](Immagini_doc/connessione.PNG)
+
+<b>Query:</b>
+
+Per creare una query bisogna innanzitutto creare una stringa con la formattazione corretta. In questo caso si esegue un inserti dei valori X, Y e Z.
+Per eseguire la query si dovrà utilizzare il metodo *mysql_query* dove quest'ultimo accetta due parametri: *$sql* (la stringa contenente la query) e *$link* (la connessione a MySQL).
+Nella riga seguente si controlla se l'esequzione della query è avvenuta correttamente.
+Infine si chiude la connessione al database con il metodo *mysql_close*.
+
+![query](Immagini_doc/query.PNG)
+
 ### Database
 Una volta terminata la progettazione del database bisogna implementare/mettere in pratica ciò che si è fatto in maniera teorica. Come primissimo passo ho iniziato a scrivere il codice sql delle tabelle presenti sul database dato che senza di esse non è possibile lavorare. 
 <br>
