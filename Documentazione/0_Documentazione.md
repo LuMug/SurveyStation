@@ -103,7 +103,7 @@ In this page is recorded the process by which we, a team of five students, could
 |**Note**    ||
 |            |**Sotto requisiti** |
 |**001**      | Sulla base del sismografo dev'essere possibile aggiungere altri strumenti di misura alla stazione (p.es. barometro o termometro) |
-|**002**      | Di nuovo sulla base del sismografo la stazione deve inviare i dati al server |
+|**002**      | Di nuovo sulla base del sismografo la stazione deve poter inviare i dati al server |
 
 
 |ID  |REQ-003                                         |
