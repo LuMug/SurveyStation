@@ -667,7 +667,6 @@ A questo punto disabilitare l'opzione in cui si sceglie di ricevere le email, si
 | TC-007        | <span style="color:red">Non passato</span>                   |
 | TC-008        | <span style="color:green">Passato</span>                   |
 | TC-009        | <span style="color:green">Passato</span>                   |
-
 | TC-009        | <span style="color:green">Passato</span>                   |
 | TC-010        | <span style="color:green">Passato</span>                   |
 | TC-011        | <span style="color:green">Passato</span>                   |
