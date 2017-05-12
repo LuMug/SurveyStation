@@ -334,7 +334,6 @@ Il lavoro che deve fare la pagina PHP è quello di recuperare X, Y e Z dall'URL 
 
 #### Data.php e comunicazione con il grafico
 
-DATA.PHP
 La pagina data.php è il cuore pulsante dell'esposizione dei dati nel grafico.
 Questo file viene chiamato ripetutamente tramite ajax e fornisce i dati che vengono continuamente inseriti nel database da Arduino.
 Nella prima parte del codice ci sono dei parametri che permettono di adattare il grafico senza dover modificare le viscere del codice.
