@@ -66,7 +66,7 @@
 ### Abstract
 
 >* The following document has the goal to illustrate the process of developement behind our creation: Survey Station.
-This project was conceived to gather data from an accelerometer (and in the future other types of detectors) and then show it on a website.
+This project was conceived to gather seismological data from an accelerometer (and in the future other types of detectors) and then show it on a website.
 In this page is recorded the process by which we, a team of five students, could create a system that can not only pick up data, but can analyze it as well, thus allowing the user to consult the recorded relevant informations.
 
 ### Scopo
