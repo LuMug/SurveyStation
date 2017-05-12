@@ -346,12 +346,18 @@ Il lavoro che deve fare la pagina PHP è quello di recuperare X, Y e Z dall'URL 
 
 #### Struttura
 
+Di seguito la struttura implementata:
+
+![struttura](Immagini_doc/struttura_impl.PNG)
+
 #### Codice
 <b>I tre include delle librerie:</b>
 
 ![include](Immagini_doc/include.PNG)
 
 <b>Le istanze degli attributi principali:</b>
+
+Nota: per recuperare l'indirizzo Ip di Arduino seguire questa guida *https://www.arduino.cc/en/Reference/EthernetLocalIP*.
 
 ![client](Immagini_doc/client.PNG)<br>
 ![arduinoIp](Immagini_doc/arduinoIp.PNG)<br>
@@ -411,7 +417,7 @@ Per eseguire la query si dovrà utilizzare il metodo *mysql_query* dove quest'ul
 Nella riga seguente si controlla se l'esequzione della query è avvenuta correttamente.
 Infine si chiude la connessione al database con il metodo *mysql_close*.
 
-![query](Immagini_doc/query.PNG)
+![query](Immagini_doc/queryPHP.PNG)
 
 ### Database
 Una volta terminata la progettazione del database bisogna implementare/mettere in pratica ciò che si è fatto in maniera teorica. Come primissimo passo ho iniziato a scrivere il codice sql delle tabelle presenti sul database dato che senza di esse non è possibile lavorare. 
@@ -723,7 +729,8 @@ Consuntivo costi:
 	* Il progetto è stato interessante, ho imparato diverse cose nuove e messo in pratica alcune di quelle che già conoscevo. È stato interessante in quanto siamo riusciti a far comunicare un arduino con un raspberry e questo può tornare utile anche in progetti futuri.<br>Penso che il progetto di per se sia uscito bene e che magari può tornare utile in futuro, magari modificando qualche parte. 
 	
 * Jeremy
-	* Il progetto personalmente mi è piaciuto, penso sia stato utile per migliorare le mie skills in programmazione, mi sono trovato bene con il team di sviluppo e in fine dei conti penso anche che siamo riusciti a portare un buon prodotto finale, sia nella parte software che in quella hardware.<br> Questo progetto potrà magari tornare utile in futuro con qualche variazione o ampliamento.
+	* Il progetto personalmente mi è piaciuto. Anche se inizialmente non ero certo sulla riuscita, devo ritenermi soddisfatto del lavoro svolto. 
+Penso sia stato utile per migliorare le mie skills in programmazione, mi sono trovato bene con il team di sviluppo e in fine dei conti penso anche che siamo riusciti a portare un buon prodotto finale, sia nella parte software che in quella hardware.<br> Questo progetto, con qualche miglioramento, potrà diventare molto utile e bello.
 
 
 ## Bibliografia
