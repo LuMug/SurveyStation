@@ -204,7 +204,7 @@ Preventivo costi:
 |Risorsa  |Prezzo                                         |
 |----|------------------------------------------------|
 |**Accelerometro**    | 10 CHF |
-|**Personale**| 50 CHF/h * 150 h lavoro = 7500               |
+|**Personale**| 50 CHF/h * 150 h lavoro * 5 = 37500               |
 |**Arduino Ethernet**| 20 CHF                |
 
 <br>
@@ -402,7 +402,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 ## Consuntivo
 
-Di seguito il GANTT di consuntivo.
+Di seguito il GANTT di consuntivo, l'implementazione del server su Raspberry al posto dell'appoggiamento su servizio esterno ha provocato rallentamenti.
 
 
 ![gantt consuntivo](Immagini_doc/gantt_cons.png)
@@ -413,7 +413,7 @@ Consuntivo costi:
 |Risorsa  |Prezzo                                         |
 |----|------------------------------------------------|
 |**Accelerometro**    | 6 CHF + 10 spedizione = 16 CHF |
-|**Personale**| 50 CHF/h * 142 h lavoro = 7100              |
+|**Personale**| 50 CHF/h * 142 h lavoro * 5 persone = 35500              |
 |**Arduino Ethernet**| 0.- (già a disposizione)                |
 
 <br>
