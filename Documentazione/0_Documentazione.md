@@ -202,28 +202,9 @@ In questo capitolo è esposto il Gantt preventivo per l'organizzazione del lavor
 
 ### Analisi dei mezzi
 
-####Hardware
-|Tipo componente  |Utilizzo nel progetto|
-|-----------------|--------------------------------|
-|1x Accelerometro|Componente principale, viene utilizzato per ricevere i dati dell'accelerazione nel caso di un sisma|
-|1x Led RGB|Utilizzato per creare un segnale fisico sulla scheda|
-|1x Veroboard|Utilizzata per saldare i componenti su di essa|
-|7x cavi arduino|Utilizzati per collegare i componenti saldati all'arduino|
-|1x Arduino Ethernet|Utilizzato per trasmettere i valori dell'accelerometro al database e per controllare il led rgb|
-|1x Raspberry pi 2|Utilizzato come webserver e database server|
 
-####Software
-|Nome software|Versione|Utilizzo nel progetto|
-|--------|---------|--------------------------------|
-|Raspbian| April 2017|Utilizzato come sistema operativo di raspberry|
-|Apache| 2.2|Webserver|
-|PHP| 5.6|Gestione di php|
-|Mysql| 5.5|Database|
 
-####Altro
-|Nome |Utilizzo nel progetto|
-|-----------------|--------------------------------|
-|Officina| Utilizzata per saldare i componenti e creare una base per la survey station|
+
 
 ## Progettazione
 
