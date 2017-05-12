@@ -270,10 +270,6 @@ Nella tabelle "utente" l'identificatore primario è il campo "email". Abbiamo op
 
 
 
-### Design delle interfacce
-
-
-
 ### Design procedurale
 
 ### Arduino
