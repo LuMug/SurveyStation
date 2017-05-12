@@ -16,8 +16,6 @@
 
   - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
 
-  - [Use case](#use-case)
-
   - [Pianificazione](#pianificazione)
 
 1. [Progettazione](#progettazione)
