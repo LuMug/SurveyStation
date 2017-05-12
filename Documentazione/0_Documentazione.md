@@ -554,7 +554,14 @@ A questo punto collegarsi al database e verificare che arrivino i medesimi dati.
 A questo punto disabilitare l'opzione in cui si sceglie di ricevere le email, simulare un'altra scossa e verificare di non ricevere ulteriori messaggi di posta. |
 |**Risultati attesi** | Gli avvisi sono presenti sulla pagina, per email arrivano solo se si è selezionata l'opzione. |
 
-
+|Test Case      | TC-005                               |
+|---------------|--------------------------------------|
+|**Nome**       | Admin e utenti |
+|**Riferimento**| REQ-005                              |
+|**Descrizione**| Verificare che una scossa venga notificata come previsto. |
+|**Prerequisiti**| - |
+|**Procedura**     | Creare 2 utenti con email conosciuta e accessibile (provare a creare il secondo utente con la stessa e-mail del primo, in seguito registrarlo con un email diversa). Accedere al sito utilizzando l'email e la password dell'admin, utlizzando il menu in alto a destra cliccaresulla voce "Gestione avanzata", provare a cambiare le configurazioni dei moduli, abilitare l'utente, creato in precedenza, come admin e eliminare l'altro utente.Infine accedere al Profilo cliccando sulla rispettiva voce nel menu in alto a destra e tramite il form provare a cambiare la password. In seguito provare a rifare login con la nuova credenziale. |
+|**Risultati attesi** | Creazione di 2 utenti con password diverse, riuscire solo tramite l'account d'amministratore ad accedere alla dashboard di gestione, cambiare correttamente le configurazioni dei moduli e le impostazioni degli utenti, eliminazione del secondo utente, modifica dell'email dell'utente loggato, al secondo login si accede con la nuova pw. |
 
 |Test Case      | TC-006                               |
 |---------------|--------------------------------------|
