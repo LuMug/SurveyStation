@@ -397,6 +397,12 @@ Ovviamente il sistema deve essere automatizzato e non devo essere una persona a 
 
 ### Sito Web
 
+#### Struttura di base del sito
+
+Il sito viene creato utilizzando i file presenti nella cartella /inc, la struttura di base è la seguente:
+
+![Struttura base](Immagini_doc/strutturaBase.PNG)
+
 #### Data.php e comunicazione con il grafico
 
 ##### Data.php
