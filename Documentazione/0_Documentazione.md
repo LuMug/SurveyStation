@@ -734,7 +734,7 @@ Penso sia stato utile per migliorare le mie skills in programmazione, mi sono tr
 
 * Jonathan
 	* In conclusione posso considerare il bilancio personale positivo, nel senso che ho avuto l'opportunità di applicare l'informatica a un lavoro che non è solo puramente gestionale o appunto 'informatico', ma che sfocia anche in un campo interessante.
-Proprio in questo senso mi sarebbe piaciuto poter approfondire di più, capire meglio quello che si stava facendo insomma, poiché abbiamo spesso viaggiato a vista e sarebbe stato anche interessante (oltre a permetterci di risparmiare tempo) conoscere meglio il mondo con cui si sta lavorando.
+Proprio in questo senso mi sarebbe piaciuto poter approfondire di più, capire meglio quello che si stava facendo insomma, poiché abbiamo spesso navigato a vista e sarebbe stato anche interessante (oltre a permetterci di risparmiare tempo) conoscere meglio il mondo con cui si sta lavorando.
 L'inconveniente che ci ha costretti ad utilizzare un raspberry come base di lavoro ha fatto sì perdere tempo, ma è stata comunque anche quella un'opportunità di lavorare con un altro strumento (anche se si è rivelato più volte un cliente poco simpatico).
 In conclusione trovo che da una parte si sarebbe potuto fare di più, ma dall'altra posso comunque essere soddisfatto di ciò che è stato prodotto, non sempre durante il lavoro avrei pensato che saremmo arrivati ad avere qualcosa di funzionante.
 
