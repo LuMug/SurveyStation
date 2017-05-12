@@ -31,10 +31,6 @@
 
 ##  Problemi riscontrati e soluzioni adottate
 Jacopo --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
-Jeremy --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
-Nicola --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
-Riccardo --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
-Jonathan --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
 
 ##  Punto della situazione rispetto alla pianificazione
 
