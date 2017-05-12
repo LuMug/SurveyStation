@@ -525,13 +525,99 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 ### Protocollo di test
 
+|Test Case      | TC-001                               |
+|---------------|--------------------------------------|
+|**Nome**       | Ricevimento dati sul server |
+|**Riferimento**| REQ-001                               |
+|**Descrizione**| Verificare che i dati arrivino correttamente. |
+|**Prerequisiti**| - |
+|**Procedura**     | Collegare l'Arduino con il programma a un PC con il software Arduino IDE. Aprire il serial monitor ed analizzare i dati che vengono ricevuti ed inviati.
+A questo punto collegarsi al database e verificare che arrivino i medesimi dati. |
+|**Risultati attesi** | I valori arrivano correttamente con un ritardo non pesante (può dipendere dal carico della rete). |
 
+
+|Test Case      | TC-002                               |
+|---------------|--------------------------------------|
+|**Nome**       | Altri sensori |
+|**Riferimento**| REQ-002                               |
+|**Descrizione**| Verificare la possibilità di aggiungere altri sensori. |
+|**Prerequisiti**| - |
+|**Procedura**     | Sviluppare le pagine di visualizzazione copiando e modificando leggermente quelle del sismografo. Creare una tabella adatta ai dati misurati. Collegare all'Arduino il nuovo sensore, implementare il codice in modo che la scheda riceva i dati, come per il TC-002 verificare che i dati vengano ricevuti ed inviati. Collegarsi al db e verificare la presenza dei dati. Controllare poi le relative pagine per la visualizzazione. |
+|**Risultati attesi** | Il rilevamento e la visualizzazione sono funzionanti. |
+
+
+
+|Test Case      | TC-004                               |
+|---------------|--------------------------------------|
+|**Nome**       | Allarmi e notifiche |
+|**Riferimento**| REQ-004                               |
+|**Descrizione**| Verificare che una scossa venga notificata come previsto. |
+|**Prerequisiti**| TC-001 passato |
+|**Procedura**     | Creare un utente con email conosciuta e accessibile. Agitare l'accelerometro per simulare un terremoto, verificare che il LED passi da verde a rosso. Verificare mentre lo si fa che sulla pagina compaia un allarme, fatto questo accedere all'email e verificare di aver ricevuto l'avviso. |
+A questo punto disabilitare l'opzione in cui si sceglie di ricevere le email, simulare un'altra scossa e verificare di non ricevere ulteriori messaggi di posta. |
+|**Risultati attesi** | Gli avvisi sono presenti sulla pagina, per email arrivano solo se si è selezionata l'opzione. |
+
+
+
+|Test Case      | TC-006                               |
+|---------------|--------------------------------------|
+|**Nome**       | Configurabilità moduli |
+|**Riferimento**| REQ-006, REQ-009                               |
+|**Descrizione**| Verificare di poter configurare i moduli |
+|**Prerequisiti**| TC-005 passato |
+|**Procedura**     | Accedere come utente comune e inserire a mano l'url della dashboard dell'admin (/surveystation/admin). Fatto questo uscire e rientrare con un utente amministratore. Andare sulla propria icona di profilo, cliccare gestione avanzata, modificare un parametro e salvare. Collegarsi al database e visualizzare i dati della tabella configurazione. |
+|**Risultati attesi** | Come utente comune non si riesce a visualizzare la pagina (esce un avviso di permessi). Quando vi si accede come admin si possono modificare i parametri, una volta salvati le modifiche devono essere avvenute sul db. |
+
+
+|Test Case      | TC-007                               |
+|---------------|--------------------------------------|
+|**Nome**       | Raccolta dati professionali |
+|**Riferimento**| REQ-007                               |
+|**Descrizione**| Verificare che vengano raccolti e visualizzati dati da piattaforme professionali. |
+|**Prerequisiti**| - |
+|**Procedura**     | Visitare la pagina con il grafico. |
+|**Risultati attesi** | È presente la tabella con i dati raccolti dal SED. |
+
+
+|Test Case      | TC-008                               |
+|---------------|--------------------------------------|
+|**Nome**       | Visualizzazione dati |
+|**Riferimento**| REQ-008                               |
+|**Descrizione**| Verificare visualizzazione dei dati. |
+|**Prerequisiti**| - |
+|**Procedura**     | Visitare la pagina con il grafico, verificare che il grafico prosegua, verificare che le date sull'asse X siano corrette. A questo punto andare sotto il grafico e aprire la finestra di un singolo terremoto (cliccare su Apri nella tabella). Verificare che esca un grafico rappresentante quell'evento. |
+|**Risultati attesi** | Il grafico si aggiorna in tempo reale. Aprendo i modal si ottiene un grafico fermo del singolo evento. |
+
+
+|Test Case      | TC-009                               |
+|---------------|--------------------------------------|
+|**Nome**       | Moduli |
+|**Riferimento**| REQ-007                               |
+|**Descrizione**| Verificare la presenza di moduli e parametri annessi. |
+|**Prerequisiti**| - |
+|**Procedura**     | Tramite la pagina di amministrazione settare dei parametri facilmente verificabili (ad esempio la soglia di salvataggio), andare poi a verificare il cambio (in questo caso sul database). |
+|**Risultati attesi** | I parametri modificati vanno a modificare il comportamento specifico del sistema. |
 
 ### Risultati test
+
+|Test Case      | Risultato                             |
+|---------------|---------------------------------------|
+| TC-001        | <span style="color:green">Passato</span>                   |
+| TC-002        | <span style="color:gray">Non testabile</span>                   |
+| TC-003        | <span style="color:green">Passato</span>                   |
+| TC-004        | <span style="color:red">Non passato</span>                   |
+| TC-005        | <span style="color:green">Passato</span>                   |
+| TC-006        | <span style="color:green">Passato</span>                   |
+| TC-007        | <span style="color:red">Non passato</span>                   |
+| TC-008        | <span style="color:green">Passato</span>                   |
+| TC-009        | <span style="color:green">Passato</span>                   |
 
 
 ### Mancanze/limitazioni conosciute
 
+Rispetto ai requisiti non si è riusciti ad implementare la funzione degli avvisi (in questo senso è però salvata l'opzione per l'utente che desidera o meno riceve le email).
+<br>
+Non c'é inoltre la raccolta dei dati dal SED, anche in questo caso è stato scritto uno script che preleva i dati, ma è ancora molto rudimentale.
 
 ## Consuntivo
 
