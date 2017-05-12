@@ -313,10 +313,13 @@ Il codice di Arduino importa tre librerie esterne:
 - <b>accel:</b> È l'istanza dell'accelerometro.
 
 <br>
-<b>Funzioni:</b>
+b>Funzioni:</b>
 - <b>setup(): </b> Funzione di settaggi e istanze.<br>
-- <b>loop(): </b> Funzione di settaggi e istanze.<br>
-- <b>updateValues(): </b> Funzione di settaggi e istanze.<br>
+- <b>loop(): </b> Innanzitutto richiama la funzione updateValues. Dopodichè controlla se il client è disponibile. Se non lo è stampa un messaggio d'errore.<br>
+- <b>updateValues(): </b> Per prima cosa si connette al server, successivamente controlla se l'accelerometro è disponibile. Nel caso di un riscontro positivo si verificano le coordinate prelevate dal sensore. Infine si crea la stringa con i valori formattata con le regole di un URL.<br>
+
+#### Pagina PHP
+Il lavoro che deve fare la pagina PHP è quello di recuperare X, Y e Z dall'URL trasmesso da Arduino. Dopodichè deve connettersi al database "surveystation" e alla tabella "sismografo". La pagina si deve occupare di creare la query e di eseguirla correttamente.
 
 ## Implementazione
 
