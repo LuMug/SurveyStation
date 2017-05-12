@@ -338,10 +338,9 @@ La pagina data.php è il cuore pulsante dell'esposizione dei dati nel grafico.
 Questo file viene chiamato ripetutamente tramite ajax e fornisce i dati che vengono continuamente inseriti nel database da Arduino.
 Nella prima parte del codice ci sono dei parametri che permettono di adattare il grafico senza dover modificare le viscere del codice.
 
-<br>
+
 ![parametri data.php](Immagini_doc/parametri.PNG)
 
-<br>
 
 Il numero di dati permette di adattare la visualizzazione, un numero basso avrà un grafico più rapido, un numero più alto permette invece di vedere un timespan più grande. Da notare che un numero eccessivamente elevato (>1000) penalizzerà sensibilmente le prestazioni.
 C'é poi un parametro di moltiplicazione, nel caso in cui si voglia avere un range diverso dei dati.
