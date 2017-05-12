@@ -294,9 +294,6 @@ Salta subito all'occhio che le tabelle presenti nello schema non sono in nessun 
 Nella tabelle "utente" l'identificatore primario è il campo "email". Abbiamo optato per questa soluzione poiché due o più utenti non possono avere lo stesso indirizzo email e ciò fa risparmiare anche memoria, oltre che a rendere più ordinata e pulita la tabella e il codice che la riguarda.  
 
 
-
-### Design procedurale
-
 ### Arduino
 
 #### Struttura
@@ -531,7 +528,8 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 |**Riferimento**| REQ-001                               |
 |**Descrizione**| Verificare che i dati arrivino correttamente. |
 |**Prerequisiti**| - |
-|**Procedura**  | Collegare l'Arduino con il programma a un PC con il software Arduino IDE. Aprire il serial monitor ed analizzare i dati che vengono ricevuti ed inviati. A questo punto collegarsi al database e verificare che arrivino i medesimi dati. |
+|**Procedura**     | Collegare l'Arduino con il programma a un PC con il software Arduino IDE. Aprire il serial monitor ed analizzare i dati che vengono ricevuti ed inviati.
+A questo punto collegarsi al database e verificare che arrivino i medesimi dati. |
 |**Risultati attesi** | I valori arrivano correttamente con un ritardo non pesante (può dipendere dal carico della rete). |
 
 
@@ -552,19 +550,11 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 |**Riferimento**| REQ-004                               |
 |**Descrizione**| Verificare che una scossa venga notificata come previsto. |
 |**Prerequisiti**| TC-001 passato |
-|**Procedura**   | Creare un utente con email conosciuta e accessibile. Agitare l'accelerometro per simulare un terremoto, verificare che il LED passi da verde a rosso. Verificare mentre lo si fa che sulla pagina compaia un allarme, fatto questo accedere all'email e verificare di aver ricevuto l'avviso. A questo punto disabilitare l'opzione in cui si sceglie di ricevere le email, simulare un'altra scossa e verificare di non ricevere ulteriori messaggi di posta. |
+|**Procedura**     | Creare un utente con email conosciuta e accessibile. Agitare l'accelerometro per simulare un terremoto, verificare che il LED passi da verde a rosso. Verificare mentre lo si fa che sulla pagina compaia un allarme, fatto questo accedere all'email e verificare di aver ricevuto l'avviso. |
+A questo punto disabilitare l'opzione in cui si sceglie di ricevere le email, simulare un'altra scossa e verificare di non ricevere ulteriori messaggi di posta. |
 |**Risultati attesi** | Gli avvisi sono presenti sulla pagina, per email arrivano solo se si è selezionata l'opzione. |
 
-|Test Case      | TC-005                               |
-|---------------|--------------------------------------|
-|**Nome**       | Admin e utenti |
-|**Riferimento**| REQ-005                              |
-|**Descrizione**| Verificare che una scossa venga notificata come previsto. |
-|**Prerequisiti**| - |
-|**Procedura**     | Creare 2 utenti con email conosciuta e accessibile (provare a creare il secondo utente con la stessa e-mail del primo, in seguito registrarlo con un email diversa). Accedere al sito utilizzando l'email e la password dell'admin, utlizzando il menu in alto a destra cliccare
-sulla voce "Gestione avanzata", provare a cambiare le configurazioni dei moduli, abilitare l'utente, creato in precedenza, come admin e eliminare l'altro utente.
-Infine accedere al Profilo cliccando sulla rispettiva voce nel menu in alto a destra e tramite il form provare a cambiare la password. In seguito provare a rifare login con la nuova credenziale. |
-|**Risultati attesi** | Creazione di 2 utenti con password diverse, riuscire solo tramite l'account d'amministratore ad accedere alla dashboard di gestione, cambiare correttamente le configurazioni dei moduli e le impostazioni degli utenti, eliminazione del secondo utente, modifica dell'email dell'utente loggato, al secondo login si accede con la nuova pw. |
+
 
 |Test Case      | TC-006                               |
 |---------------|--------------------------------------|
@@ -625,6 +615,8 @@ Infine accedere al Profilo cliccando sulla rispettiva voce nel menu in alto a de
 Rispetto ai requisiti non si è riusciti ad implementare la funzione degli avvisi (in questo senso è però salvata l'opzione per l'utente che desidera o meno riceve le email).
 <br>
 Non c'é inoltre la raccolta dei dati dal SED, anche in questo caso è stato scritto uno script che preleva i dati, ma è ancora molto rudimentale.
+<br>
+Per quanto riguarda l'ambiente database un'ostacolo è stata la mancanta d'esperienza di creazione e d'utilizzo dei trigger, procedure ed eventi (quest'ultimi mai trattati). Sono convinto del fatto che se avessi avuto un pò più d'esperienza in quest'ambito sarei riuscito ad arrivare alla soluzione auspicata in minor tempo. Inoltre per quanto riguarda il capitolo degli eventi, non avendolo mai accennato in classe, mi sono dovuto affidare totalmente ad internet. Infatti uno dei due eventi non funzionava e non sono riuscito a capirne il motivo. Ritengo che un'infarinatura di base mi avrebbe permesso di trovare una possibile soluzione e di investire meglio il tempo.
 
 ## Consuntivo
 
@@ -663,7 +655,7 @@ Consuntivo costi:
 
 ### Considerazioni personali
 * Jacopo Greppi
-  * Inizialmente quando ci è stato assegnato il progetto ero totalmente spiazzato poiché mi sembrava un lavoro talmente impegnativo e complicato che non pensavo che ce l'avessi potuta fare. Piano piano abbiamo iniziato a suddividerci il lavoro, io ero incaricato di progettare, creare e gestire il database, e quella nebbia di incertezze ha iniziato a diradarsi. L'idea del progetto l'ho trovata molto interessante poiché ci ha permesso di creare qualcosa che si può applicare per un uso reale nella vita di tutti i giorni. Ovviamente ci sono state diverse difficoltà durante tutto il percorso, ma questo mi ha permesso di mettermi alla prova e di valutare le mie capacità. Ho ovviamente imparato alcune nozioni che durante i vari moduli non abbiamo trattato e ciò è molto positivo perché ho avuto l'opportunità di ampliare il mio bagaglio culturale. 
+  * Inizialmente quando ci è stato assegnato il progetto ero totalmente spiazzato poiché mi sembrava un lavoro talmente impegnativo e complicato che non pensavo che ce l'avessi potuta fare. Quando ci siamo suddivisi il lavoro io sono stato incaricato di progettare, creare e gestire il database. Man mano che lavoravo quella nebbia di incertezze ha iniziato a diradarsi. L'idea del progetto l'ho trovata molto interessante sin da subito poiché si tratta di qualcosa che può dare un reale contributo lavorativo. Ci è stato permesso di creare qualcosa che si possa applicare per un uso reale nella vita di tutti i giorni. Ovviamente ci sono state diverse difficoltà durante tutto il percorso, ma questo mi ha permesso di mettermi alla prova e di valutare le mie capacità. Ho ovviamente imparato alcune nozioni che durante i vari moduli non abbiamo trattato e ciò è molto positivo perché ho avuto l'opportunità di ampliare il mio bagaglio culturale. Come succede con ogni progetto, il tempo non è mai sufficiente per poter fare tutto ciò che si doveva/voleva fare. Stessa cosa vale per il nostro. C'è da dire però che rispetto ad altri gruppi, per quello che ho visto e chiesto io, il nostro prodotto sembrerebbe essere relativamente completo. Sia per quanto riguarda il contenuto della documentazione, sia per ciò che è stato implementato e per il suo funzionamento.
   
  * Nicola
 	* Il progetto è stato interessante, ho imparato diverse cose nuove e messo in pratica alcune di quelle che già conoscevo. È stato interessante in quanto siamo riusciti a far comunicare un arduino con un raspberry e questo può tornare utile anche in progetti futuri.<br>Penso che il progetto di per se sia uscito bene e che magari può tornare utile in futuro, magari modificando qualche parte. 
