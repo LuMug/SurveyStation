@@ -191,8 +191,6 @@
 |**002**     | Ogni modulo dispone della sua sezione sul sito, con tabella nel DB per il salvataggio dei valori e grafico per la visualizzazione |
 
 
-### Use case
-
 
 ### Pianificazione
 
