@@ -27,6 +27,7 @@
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
+|8.20 - 15.45| Documentazione|
 
 
 ##  Problemi riscontrati e soluzioni adottate
