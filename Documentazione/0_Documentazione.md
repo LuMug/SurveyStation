@@ -357,7 +357,7 @@ Di seguito la struttura implementata:
 
 <b>Le istanze degli attributi principali:</b>
 
-Nota: per recuperare l'indirizzo Ip di Arduino seguire questa guida *https://www.arduino.cc/en/Reference/EthernetLocalIP*.
+Nota: per recuperare l'indirizzo Ip di Arduino seguire questa guida *https://www.arduino.cc/en/Reference/EthernetLocalIP* oppure eseguire il codice getIp che è call'interno degli allegati.
 
 ![client](Immagini_doc/client.PNG)<br>
 ![arduinoIp](Immagini_doc/arduinoIp.PNG)<br>
@@ -771,6 +771,10 @@ In conclusione trovo che da una parte si sarebbe potuto fare di più, ma dall'al
   * Schema del design dei dati
   * file sql per creare il database del progetto
 * Sito completo
+* Arduino
+  * Codice toPagePHP
+  * Codice getIP
+  * Pagina PHP
 * DataSheet dell'accelerometro MMA8452Q
 * Diari
 * Quaderno dei compiti (qdc)
