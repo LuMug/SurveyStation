@@ -355,7 +355,7 @@ Si possono poi definire delle transizioni per i 3 valori, in questo modo le line
 La query che viene ripetuta seleziona $nrDati di dati e in seguito li inverte, fatto questo riordina i risultati in base all'id.
 
 
-![fetch data.php](Immagini_doc/fetch.png)
+![fetch data.php](Immagini_doc/fetch.PNG)
 
 
 I dati vengono presi dal risultato della query e inseriti in 4 array diversi.
