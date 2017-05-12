@@ -473,6 +473,21 @@ Il sito viene creato utilizzando i file presenti nella cartella /inc, la struttu
 
 ![Struttura base](Immagini_doc/strutturaBase.PNG)
 
+#### Dashboard di gestione
+
+La dashboard di gestione viene creata dinamicamente sulla base del database.
+![Struttura base](Immagini_doc/formGrafico.PNG)
+
+Ho utilizzato lo stesso stratagemma per la gestione degli utenti:
+![Struttura base](Immagini_doc/formUser.PNG)
+
+#### Modal di visualizzazione
+
+Per ogni singolo terremoto è possibile vedere il proprio grafico, la struttura per la creazione di questa porzione di sito è suddivisa in tre parti, una tabella contentente i terremoti più importanti, un modal contenente un iframe (che richiama la pagina moda.php) e una pagina che stampa soltanto il grafico desiderato.
+
+![Struttura base](Immagini_doc/tabellaTerremoto.PNG)
+![Struttura base](Immagini_doc/modal.PNG)
+![Struttura base](Immagini_doc/selezioneGrafico.PNG)
 #### Data.php e comunicazione con il grafico
 
 ##### Data.php
