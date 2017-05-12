@@ -240,13 +240,29 @@ Preventivo costi:
 
 
 
+
 ### Design dell’architettura del sistema
+
+
+![schema generale](Immagini_doc/shemagenerale.PNG)
+
+Il sistema si basa su 3 grossi passaggi di funzionamento.
+In primo luogo c'é l'Arduino collegato a vari sensori, questo si occupa di inviare tramite la rete Ethernet i dati rilevati.
+Il secondo punto è rappresentato da un (web)Server che implementa il database. Nel DB i dati vengono raccolti e vengono già parzialmente lavorati.
+In questa fase è importante notare la presenza di Raspberry, è infatti quest'ultimo che funge da WebServer, questo è un dettaglio che è stato pensato solo in seguito, quando ci si è resi conto che il servizio che doveva ospitare il lavoro non era adatto alle nostre esigenze.
+Nel Raspberry è implementato un semplice sistema LAMP su una scheda da 16 GB.
+Infine c'é l'utente che chiama la pagina, questo livello è l'ultimo nel percorso dei dati.
+Il codice PHP preleva i dati dal DB, li adatta alla visualizzazione sulla pagina e infine li invia alla stessa.
+Questo schema ha il vantaggio di poter essere applicato facilmente a qualunque tipo di rilevamento (prendendo chiaramente coscienza di quello che si sta misurando).
+
+<br> 
 
 Di seguito uno schema che rappresenta l'archietettura della pagina web, essa è costruita in base a pagine php che vengono utilizzate con 'require'. Questo facilita la comprensione, ottimizza i files utilizzati e facilita la modulabilità.
 
 ![schema sito](Immagini_doc/SchemaSito.png)
 <br>
 <br>
+
 ### Design dei dati e database
 
 La parte di design dei dati ha la funzione di mostrare che tipi di dati sono stati assegnati ai vari attributi delle tabelle presenti nel database. L'immagine che segue mostra il design dei dati del database "surveyStation", usato per questo progetto.
