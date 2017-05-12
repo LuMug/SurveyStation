@@ -753,6 +753,9 @@ Proprio in questo senso mi sarebbe piaciuto poter approfondire di più, capire m
 L'inconveniente che ci ha costretti ad utilizzare un raspberry come base di lavoro ha fatto sì perdere tempo, ma è stata comunque anche quella un'opportunità di lavorare con un altro strumento (anche se si è rivelato più volte un cliente poco simpatico).
 In conclusione trovo che da una parte si sarebbe potuto fare di più, ma dall'altra posso comunque essere soddisfatto di ciò che è stato prodotto, non sempre durante il lavoro avrei pensato che saremmo arrivati ad avere qualcosa di funzionante.
 
+* Riccardo *
+Il progetto è stato interessante, il risultato molto positivo visto che all'inizio abbiamo tutti dubitato un po', ho imparato qualche nuova tecnica e mi sono allenato con quelle che già avevo appreso.
+
 ## Bibliografia
 
 
