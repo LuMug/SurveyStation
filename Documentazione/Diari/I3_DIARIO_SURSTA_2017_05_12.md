@@ -11,6 +11,7 @@
 ##### Jonathan Fassora
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
+|8:20 - 15:45  |Documentazione.|
 
 ##### Jacopo Greppi
 |Orario        |Lavoro svolto                                     |
