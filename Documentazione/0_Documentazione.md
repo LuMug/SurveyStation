@@ -348,7 +348,7 @@ Il lavoro che deve fare la pagina PHP è quello di recuperare X, Y e Z dall'URL 
 
 Di seguito la struttura implementata:
 
-![struttura](Immagini_doc/struttura_impl.PNG)
+![struttura](Immagini_doc/struttura_impl.JPG)
 
 #### Codice
 <b>I tre include delle librerie:</b>
