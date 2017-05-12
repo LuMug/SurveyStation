@@ -334,6 +334,8 @@ Il lavoro che deve fare la pagina PHP è quello di recuperare X, Y e Z dall'URL 
 
 #### Data.php e comunicazione con il grafico
 
+##### Data.php
+
 La pagina data.php è il cuore pulsante dell'esposizione dei dati nel grafico.
 Questo file viene chiamato ripetutamente tramite ajax e fornisce i dati che vengono continuamente inseriti nel database da Arduino.
 Nella prima parte del codice ci sono dei parametri che permettono di adattare il grafico senza dover modificare le viscere del codice.
@@ -353,7 +355,7 @@ Si possono poi definire delle transizioni per i 3 valori, in questo modo le line
 La query che viene ripetuta seleziona $nrDati di dati e in seguito li inverte, fatto questo riordina i risultati in base all'id.
 
 
-!fetch data.php](Immagini_doc/fetch.png)
+![fetch data.php](Immagini_doc/fetch.png)
 
 
 I dati vengono presi dal risultato della query e inseriti in 4 array diversi.
@@ -364,7 +366,7 @@ I dati vengono presi dal risultato della query e inseriti in 4 array diversi.
 
 Completato il processo i 4 gruppi di dati vengono inseriti in un grosso array che viene poi mandato in ritorno in formato json.
 
-GRAFICO (flot)
+##### Grafico FLOT
 
 Il grafico è un oggetto messo a disposizione da flotchars JavaScript (http://www.flotcharts.org/) e poi adattato al nostro utilizzo.
 
@@ -373,6 +375,7 @@ Il grafico è un oggetto messo a disposizione da flotchars JavaScript (http://ww
 
 
 La funzione showHint() viene chiamata ripetutamente tramite AJAX ogni tot. millisecondi (definiti in setInterval).
+
 
 ![timeout](Immagini_doc/settimeout.PNG)
 
