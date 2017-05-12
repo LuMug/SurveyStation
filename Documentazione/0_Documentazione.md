@@ -197,7 +197,7 @@ In this page is recorded the process by which we, a team of five students, could
 
 In questo capitolo è esposto il Gantt preventivo per l'organizzazione del lavoro.
 
-![schema sito](Immagini_doc/gantt_preventivo.png)
+![schema gantt](Immagini_doc/gantt_preventivo.png)
 <br>
 
 ### Analisi dei mezzi
