@@ -352,43 +352,43 @@ Il lavoro che deve fare la pagina PHP è quello di recuperare X, Y e Z dall'URL 
 #### Codice
 <b>I tre include delle librerie:</b>
 
-![include](Immagini_doc/include.png)
+![include](Immagini_doc/include.PNG)
 
 <b>Le istanze degli attributi principali:</b>
 
-![client](Immagini_doc/client.png)<br>
-![arduinoIp](Immagini_doc/arduinoIp.png)<br>
-![serverIp](Immagini_doc/serverIp.png)<br>
-![macArduino](Immagini_doc/macArduino.png)<br>
-![accel](Immagini_doc/accel.png)<br>
-![url](Immagini_doc/url.png)
+![client](Immagini_doc/client.PNG)<br>
+![arduinoIp](Immagini_doc/arduinoIp.PNG)<br>
+![serverIp](Immagini_doc/serverIp.PNG)<br>
+![macArduino](Immagini_doc/macArduino.PNG)<br>
+![accel](Immagini_doc/accel.PNG)<br>
+![url](Immagini_doc/url.PNG)
 
 <b>Il setup:</b>
 
 Il metodo <b>*.init()*</b> serve a settare due attributi fondamentali. Il primo attributo è la scala dei valori acquisiti dal sensore. Si possono settare 3 scale differenti: SCALE_2G, SCALE_4G e SCALE_8G.
 Il secondo attributo invece si occupa di impostare la frequenza di rilevamento. La gamma dei valori è vasta e parte da ODR_1 (1.56 Hz) fino ad arrivare a ODR_800 (800 Hz).
 
-![setup](Immagini_doc/setup.png)
+![setup](Immagini_doc/setup.PNG)
 
 <b>Il loop:</b>
 
 Il loop serve principalmente a richiamare *updateValues()* e a scrivere sulla seriale lo stato delle connessioni.
 
-![loop](Immagini_doc/loop.png)
+![loop](Immagini_doc/loop.PNG)
 
 <b>UpdateValues:</b>
 
 Come prima cosa si conette al server. Il metodo *.connect()* accetta due parametri. Il primo parametro è l'indirizzo ip del server: il tipo deve essere <b>IPAddress</b>. Il secondo parametro è la porta tramite cui Arduino deve accedere.
 
-![uv1](Immagini_doc/uv1.png)
+![uv1](Immagini_doc/uv1.PNG)
 
 Il secondo passo è quello di vedere se l'accelerometro è disponibile. Se così fosse, si può passare a leggere i valori rilevati dal sensore. Il metodo *.read()* serve a leggere l'accelerazione delle tre assi. Fatto ciò si può recuperare la singola accelerazione tramite: *.cx*, *.cy* e *.cz*. Si potrebbe usare anche: *.x*, *.y* e *.z* ma i valori ottenuti da questi attributi sarebbero stati assoluti. Con la seconda opzione invece i valori fanno riferimento allo zero.
 
-![uv2](Immagini_doc/uv2.png)
+![uv2](Immagini_doc/uv2.PNG)
 
 Il terzo passo riguarda la creazione della stringa URL e la spedizione al server. I tre valori X, Y e Z vengono passati tramite l'URL e alle apposite variabili. Nel punto in cui bisogna inserire l'indirizzo IP dell'host si inserisce l'indirizzo del server. Dopo aver spedito l'URL si chiude la connessione.
 
-![uv3](Immagini_doc/uv3.png)
+![uv3](Immagini_doc/uv3.PNG)
 
 
 #### Pagina PHP
