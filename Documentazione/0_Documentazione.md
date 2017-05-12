@@ -508,12 +508,6 @@ Consuntivo costi:
 
 ## Bibliografia
 
-### Bibliografia per articoli di riviste
-
-
-### Bibliografia per libri
-
-
 
 ### Sitografia
 * https://dev.mysql.com/doc/refman/5.7/en/, MySQL 5.7 Reference Manual, 5.5.2017
