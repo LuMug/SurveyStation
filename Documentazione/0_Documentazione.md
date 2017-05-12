@@ -244,7 +244,7 @@ Preventivo costi:
 ### Design dell’architettura del sistema
 
 
-![schema generale](Immagini_doc/shemagenerale.PNG)
+![schema generale](Immagini_doc/schemagenerale.PNG)
 
 Il sistema si basa su 3 grossi passaggi di funzionamento.
 In primo luogo c'é l'Arduino collegato a vari sensori, questo si occupa di inviare tramite la rete Ethernet i dati rilevati.
