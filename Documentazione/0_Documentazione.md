@@ -722,7 +722,7 @@ Consuntivo costi:
   - Infine potrebbe essere interessante utilizzare un sistema di 'traduzione' in scale più conosciute dei dati sismologici rilevati (la scala Richter non è un'opzione in quanto non è direttamente collegata ai valori di accelerazione).
 
 ### Considerazioni personali
-* Jacopo Greppi
+* Jacopo
   * Inizialmente quando ci è stato assegnato il progetto ero totalmente spiazzato poiché mi sembrava un lavoro talmente impegnativo e complicato che non pensavo che ce l'avessi potuta fare. Quando ci siamo suddivisi il lavoro io sono stato incaricato di progettare, creare e gestire il database. Man mano che lavoravo quella nebbia di incertezze ha iniziato a diradarsi. L'idea del progetto l'ho trovata molto interessante sin da subito poiché si tratta di qualcosa che può dare un reale contributo lavorativo. Ci è stato permesso di creare qualcosa che si possa applicare per un uso reale nella vita di tutti i giorni. Ovviamente ci sono state diverse difficoltà durante tutto il percorso, ma questo mi ha permesso di mettermi alla prova e di valutare le mie capacità. Ho ovviamente imparato alcune nozioni che durante i vari moduli non abbiamo trattato e ciò è molto positivo perché ho avuto l'opportunità di ampliare il mio bagaglio culturale. Come succede con ogni progetto, il tempo non è mai sufficiente per poter fare tutto ciò che si doveva/voleva fare. Stessa cosa vale per il nostro. C'è da dire però che rispetto ad altri gruppi, per quello che ho visto e chiesto io, il nostro prodotto sembrerebbe essere relativamente completo. Sia per quanto riguarda il contenuto della documentazione, sia per ciò che è stato implementato e per il suo funzionamento.
   
  * Nicola
@@ -732,6 +732,11 @@ Consuntivo costi:
 	* Il progetto personalmente mi è piaciuto. Anche se inizialmente non ero certo sulla riuscita, devo ritenermi soddisfatto del lavoro svolto. 
 Penso sia stato utile per migliorare le mie skills in programmazione, mi sono trovato bene con il team di sviluppo e in fine dei conti penso anche che siamo riusciti a portare un buon prodotto finale, sia nella parte software che in quella hardware.<br> Questo progetto, con qualche miglioramento, potrà diventare molto utile e bello.
 
+* Jonathan
+	* In conclusione posso considerare il bilancio personale positivo, nel senso che ho avuto l'opportunità di applicare l'informatica a un lavoro che non è solo puramente gestionale o appunto 'informatico', ma che sfocia anche in un campo interessante.
+Proprio in questo senso mi sarebbe piaciuto poter approfondire di più, capire meglio quello che si stava facendo insomma, poiché abbiamo spesso viaggiato a vista e sarebbe stato anche interessante (oltre a permetterci di risparmiare tempo) conoscere meglio il mondo con cui si sta lavorando.
+L'inconveniente che ci ha costretti ad utilizzare un raspberry come base di lavoro ha fatto sì perdere tempo, ma è stata comunque anche quella un'opportunità di lavorare con un altro strumento (anche se si è rivelato più volte un cliente poco simpatico).
+In conclusione trovo che da una parte si sarebbe potuto fare di più, ma dall'altra posso comunque essere soddisfatto di ciò che è stato prodotto, non sempre durante il lavoro avrei pensato che saremmo arrivati ad avere qualcosa di funzionante.
 
 ## Bibliografia
 
