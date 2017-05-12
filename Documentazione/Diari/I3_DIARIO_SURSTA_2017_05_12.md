@@ -22,6 +22,7 @@
 ##### Nicola Mazzoletti
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
+|8.20 - 15.45| Documentazione|
 
 ##### Riccardo di Summa
 |Orario        |Lavoro svolto                 |
@@ -29,11 +30,11 @@
 
 
 ##  Problemi riscontrati e soluzioni adottate
-Jacopo --> Nessun problema dato che mi sono concentrato sulla documentazione
-Jeremy --> Nessun problema dato che mi sono concentrato sulla documentazione
-Nicola --> Nessun problema dato che mi sono concentrato sulla documentazione
-Riccardo --> Nessun problema dato che mi sono concentrato sulla documentazione
-Jonathan --> Nessun problema dato che mi sono concentrato sulla documentazione
+Jacopo --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
+Jeremy --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
+Nicola --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
+Riccardo --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
+Jonathan --> Nessun problema dato che mi sono concentrato sulla documentazione<br>
 
 ##  Punto della situazione rispetto alla pianificazione
 
