@@ -518,6 +518,10 @@ Consuntivo costi:
 ### Sitografia
 * https://dev.mysql.com/doc/refman/5.7/en/, MySQL 5.7 Reference Manual, 5.5.2017
 * https://www.w3schools.com/sql/DEfaULT.asP, Sql Tutorial, 5.5.2017
+* https://github.com/sparkfun/SparkFun_MMA8452Q_Arduino_Library, MMA8452Q Accelerometer Library, 7.4.2017
+* https://www.raspberrypi.org/, Varie pagine, 21.4.2017
+* http://www.flotcharts.org/, Flot Charts JS, 10.2.2017
+* http://www.nxp.com/assets/documents/data/en/data-sheets/MMA8452Q.pdf, MMA8452Q Data Sheet (anche in allegato), 7.4.2017
 
 ## Allegati
 * Database
