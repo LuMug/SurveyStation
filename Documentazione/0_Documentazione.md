@@ -313,7 +313,8 @@ Il codice di Arduino importa tre librerie esterne:
 - <b>accel:</b> È l'istanza dell'accelerometro.
 
 <br>
-b>Funzioni:</b>
+<b>Funzioni:</b>
+
 - <b>setup(): </b> Funzione di settaggi e istanze.<br>
 - <b>loop(): </b> Innanzitutto richiama la funzione updateValues. Dopodichè controlla se il client è disponibile. Se non lo è stampa un messaggio d'errore.<br>
 - <b>updateValues(): </b> Per prima cosa si connette al server, successivamente controlla se l'accelerometro è disponibile. Nel caso di un riscontro positivo si verificano le coordinate prelevate dal sensore. Infine si crea la stringa con i valori formattata con le regole di un URL.<br>
