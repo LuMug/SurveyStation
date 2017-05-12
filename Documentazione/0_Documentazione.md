@@ -485,6 +485,15 @@ Consuntivo costi:
 
 ### Sviluppi futuri
 
+  - Il primo sviluppo che si può applicare è sicuramente quello del collegamento di nuovi sensori, la struttura applicata permette di eseguire questa operazione senza troppi problemi, posto che si sappia il tipo di valori rilevati.
+  
+  - Per ottenere più solidità si potrebbe in futuro appoggiarsi a un servizio di hosting esterno (che permetta l'utilizzo di procedure e simili, chiaramente), in questo modo ci si distacca dal Raspberry che è meno stabile. Altra possibilità in questo senso è quella di utilizzare il Raspberry come 'passaggio intermedio' per poi trasferire la grossa mole di dati su un database esterno.
+  
+  - Importante per continuare il lavoro sarebbe capire completamente le funzionalità dell'Accelerometro, c'é la possibilità per esempio di calibrarlo settando degli offset (e rimuovendo quindi il 'rumore' di accelerazione che viene rilevato, per esempio la gravità), si potrebbe poi sfruttare le sue altre funzionalità (quali ad esempio il landscape o lo standby).
+  
+  - Si potrebbe poi andare ad implementare il sistema di allarmi e notifiche, utilizzando un server mail (interno o esterno) si potrebbe avvisare l'utente che qualcosa di interessante è successo.
+  
+  - Infine potrebbe essere interessante utilizzare un sistema di 'traduzione' in scale più conosciute dei dati sismologici rilevati (la scala Richter non è un'opzione in quanto non è direttamente collegata ai valori di accelerazione).
 
 ### Considerazioni personali
 * Jacopo
