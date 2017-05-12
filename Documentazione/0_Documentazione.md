@@ -544,7 +544,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 <br>
 
-|Test Case      | TC-004                               |
+|Test Case      | TC-003                               |
 |---------------|--------------------------------------|
 |**Nome**       | Allarmi e notifiche |
 |**Riferimento**| REQ-004                               |
@@ -555,7 +555,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 <br>
 
-|Test Case      | TC-006                               |
+|Test Case      | TC-004                               |
 |---------------|--------------------------------------|
 |**Nome**       | Configurabilità moduli |
 |**Riferimento**| REQ-006, REQ-009                               |
@@ -566,7 +566,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 <br>
 
-|Test Case      | TC-007                               |
+|Test Case      | TC-005                               |
 |---------------|--------------------------------------|
 |**Nome**       | Raccolta dati professionali |
 |**Riferimento**| REQ-007                               |
@@ -577,7 +577,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 <br>
 
-|Test Case      | TC-008                               |
+|Test Case      | TC-006                               |
 |---------------|--------------------------------------|
 |**Nome**       | Visualizzazione dati |
 |**Riferimento**| REQ-008                               |
@@ -588,7 +588,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 <br>
 
-|Test Case      | TC-009                               |
+|Test Case      | TC-007                               |
 |---------------|--------------------------------------|
 |**Nome**       | Moduli |
 |**Riferimento**| REQ-007                               |
@@ -598,7 +598,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 |**Risultati attesi** | I parametri modificati vanno a modificare il comportamento specifico del sistema. |
 <br>
 
-|Test Case      | TC-010                               |
+|Test Case      | TC-008                               |
 |---------------|--------------------------------------|
 |**Nome**       |Dati da sismografo a shake. |
 |**Riferimento**|REQ-003                               |
@@ -609,7 +609,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 <br>
 
-|Test Case      | TC-011                               |
+|Test Case      | TC-009                               |
 |---------------|--------------------------------------|
 |**Nome**       | Individuamento picco di dati.|
 |**Riferimento**|REQ-003                               |
@@ -620,7 +620,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 <br>
 
-|Test Case      | TC-012                               |
+|Test Case      | TC-010                               |
 |---------------|--------------------------------------|
 |**Nome**       | Cancellare dati vecchi.|
 |**Riferimento**|REQ-003                               |
@@ -631,7 +631,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 <br>
 
-|Test Case      | TC-013                               |
+|Test Case      | TC-011                               |
 |---------------|--------------------------------------|
 |**Nome**       | Immagazzinare dati ogni minuto.|
 |**Riferimento**|REQ-003                               |
@@ -642,7 +642,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 <br>
 
-|Test Case      | TC-014                               |
+|Test Case      | TC-012                               |
 |---------------|--------------------------------------|
 |**Nome**       | Cancellare dati ogni ora.|
 |**Riferimento**|REQ-003                               |
@@ -658,19 +658,17 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 |---------------|---------------------------------------|
 | TC-001        | <span style="color:green">Passato</span>                   |
 | TC-002        | <span style="color:gray">Non testabile</span>                   |
-| TC-003        | <span style="color:green">Passato</span>                   |
-| TC-004        | <span style="color:red">Non passato</span>                   |
-| TC-005        | <span style="color:green">Passato</span>                   |
+| TC-003        | <span style="color:green">Non passato</span>                   |
+| TC-004        | <span style="color:red">Passato</span>                   |
+| TC-005        | <span style="color:green">Non passato</span>                   |
 | TC-006        | <span style="color:green">Passato</span>                   |
-| TC-007        | <span style="color:red">Non passato</span>                   |
+| TC-007        | <span style="color:red">Passato</span>                   |
 | TC-008        | <span style="color:green">Passato</span>                   |
 | TC-009        | <span style="color:green">Passato</span>                   |
 | TC-009        | <span style="color:green">Passato</span>                   |
 | TC-010        | <span style="color:green">Passato</span>                   |
 | TC-011        | <span style="color:green">Passato</span>                   |
-| TC-012        | <span style="color:green">Passato</span>                   |
-| TC-013        | <span style="color:green">Passato</span>                   |
-| TC-014        | <span style="color:green">non passato</span>                   |
+| TC-012        | <span style="color:green">Non passato</span>                   |
 
 
 
