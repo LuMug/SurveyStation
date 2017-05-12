@@ -548,6 +548,9 @@ Consuntivo costi:
 ### Considerazioni personali
 * Jacopo Greppi
   * Inizialmente quando ci è stato assegnato il progetto ero totalmente spiazzato poiché mi sembrava un lavoro talmente impegnativo e complicato che non pensavo che ce l'avessi potuta fare. Piano piano abbiamo iniziato a suddividerci il lavoro, io ero incaricato di progettare, creare e gestire il database, e quella nebbia di incertezze ha iniziato a diradarsi. L'idea del progetto l'ho trovata molto interessante poiché ci ha permesso di creare qualcosa che si può applicare per un uso reale nella vita di tutti i giorni. Ovviamente ci sono state diverse difficoltà durante tutto il percorso, ma questo mi ha permesso di mettermi alla prova e di valutare le mie capacità. Ho ovviamente imparato alcune nozioni che durante i vari moduli non abbiamo trattato e ciò è molto positivo perché ho avuto l'opportunità di ampliare il mio bagaglio culturale. 
+  
+ * Nicola
+	* Il progetto è stato interessante, ho imparato diverse cose nuove e messo in pratica alcune di quelle che già conoscevo. È stato interessante in quanto siamo riusciti a far comunicare un arduino con un raspberry e questo può tornare utile anche in progetti futuri.<br>Penso che il progetto di per se sia uscito bene e che magari può tornare utile in futuro, magari modificando qualche parte. 
 
 
 ## Bibliografia
