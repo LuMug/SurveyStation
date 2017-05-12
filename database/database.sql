@@ -149,12 +149,4 @@ CREATE EVENT runProcedureOldData
 DELIMITER ;
 
 
-DELIMITER //
-CREATE EVENT runProcedureStorePreviousData
-	ON SCHEDULE EVERY 1 minute
-    ON completion preserve
-	DO begin
-    CALL storePreviousData();
-	end;
-//
-DELIMITER ;
+SET GLOBAL event_scheduler = ON; 
