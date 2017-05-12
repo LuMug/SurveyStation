@@ -198,6 +198,15 @@ In this page is recorded the process by which we, a team of five students, could
 In questo capitolo è esposto il Gantt preventivo per l'organizzazione del lavoro.
 
 ![schema gantt](Immagini_doc/gantt_preventivo.png)
+
+Preventivo costi:
+
+|Risorsa  |Prezzo                                         |
+|----|------------------------------------------------|
+|**Accelerometro**    | 10 CHF |
+|**Personale**| 50 CHF/h * 150 h lavoro = 7500               |
+|**Arduino Ethernet**| 20 CHF                |
+
 <br>
 
 ### Analisi dei mezzi
@@ -393,6 +402,21 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 
 ## Consuntivo
 
+Di seguito il GANTT di consuntivo.
+
+
+![gantt consuntivo](Immagini_doc/gantt_cons.PNG)
+
+
+Consuntivo costi:
+
+|Risorsa  |Prezzo                                         |
+|----|------------------------------------------------|
+|**Accelerometro**    | 6 CHF + 10 spedizione = 16 CHF |
+|**Personale**| 50 CHF/h * 142 h lavoro = 7100              |
+|**Arduino Ethernet**| 0.- (già a disposizione)                |
+
+<br>
 
 
 ## Conclusioni
