@@ -528,8 +528,7 @@ I dati ricevuti vengono decodificati da JSON e vengono poi inseriti nei dataset 
 |**Riferimento**| REQ-001                               |
 |**Descrizione**| Verificare che i dati arrivino correttamente. |
 |**Prerequisiti**| - |
-|**Procedura**     | Collegare l'Arduino con il programma a un PC con il software Arduino IDE. Aprire il serial monitor ed analizzare i dati che vengono ricevuti ed inviati.
-A questo punto collegarsi al database e verificare che arrivino i medesimi dati. |
+|**Procedura**     | Collegare l'Arduino con il programma a un PC con il software Arduino IDE. Aprire il serial monitor ed analizzare i dati che vengono ricevuti ed inviati. A questo punto collegarsi al database e verificare che arrivino i medesimi dati. |
 |**Risultati attesi** | I valori arrivano correttamente con un ritardo non pesante (può dipendere dal carico della rete). |
 
 <br>
@@ -551,8 +550,7 @@ A questo punto collegarsi al database e verificare che arrivino i medesimi dati.
 |**Riferimento**| REQ-004                               |
 |**Descrizione**| Verificare che una scossa venga notificata come previsto. |
 |**Prerequisiti**| TC-001 passato |
-|**Procedura**     | Creare un utente con email conosciuta e accessibile. Agitare l'accelerometro per simulare un terremoto, verificare che il LED passi da verde a rosso. Verificare mentre lo si fa che sulla pagina compaia un allarme, fatto questo accedere all'email e verificare di aver ricevuto l'avviso. |
-A questo punto disabilitare l'opzione in cui si sceglie di ricevere le email, simulare un'altra scossa e verificare di non ricevere ulteriori messaggi di posta. |
+|**Procedura**     | Creare un utente con email conosciuta e accessibile. Agitare l'accelerometro per simulare un terremoto, verificare che il LED passi da verde a rosso. Verificare mentre lo si fa che sulla pagina compaia un allarme, fatto questo accedere all'email e verificare di aver ricevuto l'avviso. A questo punto disabilitare l'opzione in cui si sceglie di ricevere le email, simulare un'altra scossa e verificare di non ricevere ulteriori messaggi di posta. |
 |**Risultati attesi** | Gli avvisi sono presenti sulla pagina, per email arrivano solo se si è selezionata l'opzione. |
 
 <br>
