@@ -743,6 +743,7 @@ Consuntivo costi:
   * Schema ER
   * Schema del design dei dati
   * file sql per creare il database del progetto
-
+* Sito completo
+* DataSheet dell'accelerometro MMA8452Q
 * Diari
 * Quaderno dei compiti (qdc)
