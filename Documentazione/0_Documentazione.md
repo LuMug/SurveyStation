@@ -599,6 +599,7 @@ A questo punto disabilitare l'opzione in cui si sceglie di ricevere le email, si
 |**Procedura**     | Tramite la pagina di amministrazione settare dei parametri facilmente verificabili (ad esempio la soglia di salvataggio), andare poi a verificare il cambio (in questo caso sul database). |
 |**Risultati attesi** | I parametri modificati vanno a modificare il comportamento specifico del sistema. |
 <br>
+
 |Test Case      | TC-010                               |
 |---------------|--------------------------------------|
 |**Nome**       |Dati da sismografo a shake. |
