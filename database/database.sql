@@ -22,7 +22,7 @@ create table configurazione(
 insert into configurazione(Parametro,Valore) values('minutiPrecedentiPiccoDati',1); #minuti per il quale vengono salvati i dati precedenti un picco
 insert into configurazione(Parametro,Valore) values('minutiInizioNuovoTerremoto',5);#minuti di pausa per distinzione nuovo terremoto
 insert into configurazione(Parametro,Valore) values('minutiPerCancellareDati',60); #minuti  dopo i quali i dati del sismografo vengono eliminati
-insert into configurazione(Parametro,Valore) values('valorePiccoMinimo',1100); #valore minimo di picco dal quale cominciare a salvare i dati-->Trasformarlo in accelerazione minimina??
+insert into configurazione(Parametro,Valore) values('valorePiccoMinimo',0.008); #valore minimo di picco dal quale cominciare a salvare i dati-->Trasformarlo in accelerazione minimina??
   #-----> RICORDARSI DO TRATTARE Z in qualche modo!
 
 
@@ -96,7 +96,7 @@ BEGIN
     END IF;
     
 																											#0,981 gravità terrestre
-    SET lastShakeTime = (SELECT MAX(Data) from shake where ((abs(Valore_X) > e or abs(Valore_Y) > e or abs(Valore_Z)-0.981 > e))); #il valore di lastSismografoTime corrisponde alla data più recente nella tabella shake
+    SET lastShakeTime = (SELECT MAX(Data) from shake where ((abs(Valore_X) > e or abs(Valore_Y) > e or abs(Valore_Z) > e))); #il valore di lastSismografoTime corrisponde alla data più recente nella tabella shake
 	  IF lastShakeTime = null then
 		SET lastShakeTime = '2000-01-01 00:00:00';
 	  END IF;
@@ -106,10 +106,10 @@ BEGIN
 		SET shakeId = shakeId+1;
     end if;
     
-  SET saveData = (select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL -c minute) and (abs(Valore_X) > e or abs(Valore_Y) > e or abs(Valore_Z)-0.981 > e)); #Definisco se salvare i dati solamente se negli ultimi 30 minuti c'è stato un picco
+  SET saveData = (select count(*) from shake where Data >= DATE_ADD(now(), INTERVAL -c minute) and (abs(Valore_X) > e or abs(Valore_Y) > e or abs(Valore_Z) > e)); #Definisco se salvare i dati solamente se negli ultimi 30 minuti c'è stato un picco
 
     #Inserisco i dati nella tavella shake solamente se il dato è un picco, oppure se è meno vecchio di un minuto dall'ultimo dato registrato, oppure, se saveData>0 (spiegato sopra)
-  IF ((abs(new.Valore_X) > e or abs(new.Valore_Y) > e or abs(new.Valore_Z)-0.981 > e)) OR ((lastShakeTime > DATE_ADD(now(),INTERVAL -c MINUTE)) OR (saveData > 0)) THEN
+  IF ((abs(new.Valore_X) > e or abs(new.Valore_Y) > e or abs(new.Valore_Z) > e)) OR ((lastShakeTime > DATE_ADD(now(),INTERVAL -c MINUTE)) OR (saveData > 0)) THEN
         #insert into shake (ID_Sismografo,data, Valore_X,Valore_Y,Valore_Z) values(new.ID,new.data,new.Valore_X,new.Valore_Y,new.Valore_Z); #Questa è sbagliata! 
         insert into shake (ID,data, Valore_X,Valore_Y,Valore_Z) values(shakeId,new.data,new.Valore_X,new.Valore_Y,new.Valore_Z); 
         
